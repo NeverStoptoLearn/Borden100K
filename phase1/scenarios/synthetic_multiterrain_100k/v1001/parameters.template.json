@@ -1,0 +1,351 @@
+{
+  "normal": {
+    "scenario": {
+      "id": "synthetic_multiterrain_100k",
+      "version": 1001
+    },
+    "risk_window_start_day": 0.0,
+    "risk_window_stop_day": 21900.0,
+    "network_path": "scenarios/synthetic_multiterrain_100k/v1001/network.net.xml",
+    "traffic": {
+      "closures": [
+        {
+          "edge_id": "bridge-50000-ab",
+          "start_s": 0,
+          "stop_s": 3500
+        },
+        {
+          "edge_id": "bridge-50000-ba",
+          "start_s": 0,
+          "stop_s": 3500
+        }
+      ],
+      "dispatches": [
+        {
+          "depart_s": 0,
+          "from_edge": "synt-v1-depot-link-1-ab",
+          "task_id": "synt-v1-install-1",
+          "to_edge": "synt-v1-well-link-1-ab",
+          "vehicle_id": "synt-v1-truck-1"
+        },
+        {
+          "depart_s": 10,
+          "from_edge": "synt-v1-depot-link-2-ab",
+          "task_id": "synt-v1-install-2",
+          "to_edge": "synt-v1-well-link-2-ab",
+          "vehicle_id": "synt-v1-truck-2"
+        }
+      ],
+      "network": {
+        "net_offset_m": [
+          0.0,
+          0.0
+        ],
+        "network_id": "synthetic-multiterrain-v1",
+        "network_sha256": "f3993eb2cbf1797c4b3d559e831ade28fbe214904594a8534a8f90b5980a3c76",
+        "proj_parameter": "!",
+        "source_id": "synthetic-multiterrain-v1"
+      }
+    },
+    "resources": {
+      "crews": [
+        {
+          "available_from_s": 0,
+          "available_until_s": 86400,
+          "crew_id": "synt-v1-crew-1",
+          "skills": [
+            "pump-install"
+          ]
+        },
+        {
+          "available_from_s": 0,
+          "available_until_s": 86400,
+          "crew_id": "synt-v1-crew-2",
+          "skills": [
+            "pump-install"
+          ]
+        },
+        {
+          "available_from_s": 0,
+          "available_until_s": 86400,
+          "crew_id": "synt-v1-crew-3",
+          "skills": [
+            "pump-install"
+          ]
+        }
+      ],
+      "equipment": [
+        {
+          "available_from_s": 0,
+          "available_until_s": 86400,
+          "equipment_id": "synt-v1-pump-1",
+          "mass_kg": 100,
+          "type": "pump"
+        },
+        {
+          "available_from_s": 0,
+          "available_until_s": 86400,
+          "equipment_id": "synt-v1-pump-2",
+          "mass_kg": 100,
+          "type": "pump"
+        },
+        {
+          "available_from_s": 0,
+          "available_until_s": 86400,
+          "equipment_id": "synt-v1-pump-3",
+          "mass_kg": 100,
+          "type": "pump"
+        }
+      ],
+      "inventory": [
+        {
+          "depot_id": "synt-v1-depot-1",
+          "item_id": "pump",
+          "quantity": 1
+        },
+        {
+          "depot_id": "synt-v1-depot-2",
+          "item_id": "pump",
+          "quantity": 1
+        },
+        {
+          "depot_id": "synt-v1-depot-3",
+          "item_id": "pump",
+          "quantity": 1
+        }
+      ],
+      "tasks": [
+        {
+          "depot_id": "synt-v1-depot-1",
+          "earliest_start_s": 0,
+          "extraction_rate_m3_day": 1,
+          "install_duration_s": 60,
+          "latest_stop_s": 86400,
+          "priority": 1,
+          "pump_duration_s": 3600,
+          "required_item_id": "pump",
+          "required_quantity": 1,
+          "required_skill": "pump-install",
+          "task_id": "synt-v1-install-1",
+          "unload_duration_s": 30,
+          "well_id": "well-1"
+        },
+        {
+          "depot_id": "synt-v1-depot-2",
+          "earliest_start_s": 0,
+          "extraction_rate_m3_day": 1,
+          "install_duration_s": 60,
+          "latest_stop_s": 86400,
+          "priority": 2,
+          "pump_duration_s": 3600,
+          "required_item_id": "pump",
+          "required_quantity": 1,
+          "required_skill": "pump-install",
+          "task_id": "synt-v1-install-2",
+          "unload_duration_s": 30,
+          "well_id": "well-2"
+        }
+      ],
+      "vehicles": [
+        {
+          "available_from_s": 0,
+          "available_until_s": 86400,
+          "capacity_kg": 1000,
+          "vehicle_id": "synt-v1-truck-1"
+        },
+        {
+          "available_from_s": 0,
+          "available_until_s": 86400,
+          "capacity_kg": 1000,
+          "vehicle_id": "synt-v1-truck-2"
+        },
+        {
+          "available_from_s": 0,
+          "available_until_s": 86400,
+          "capacity_kg": 1000,
+          "vehicle_id": "synt-v1-truck-3"
+        }
+      ]
+    }
+  },
+  "closure": {
+    "scenario": {
+      "id": "synthetic_multiterrain_100k",
+      "version": 1001
+    },
+    "risk_window_start_day": 0.0,
+    "risk_window_stop_day": 21900.0,
+    "network_path": "scenarios/synthetic_multiterrain_100k/v1001/network.net.xml",
+    "traffic": {
+      "closures": [
+        {
+          "edge_id": "bridge-50000-ab",
+          "start_s": 0,
+          "stop_s": 3500
+        },
+        {
+          "edge_id": "bridge-50000-ba",
+          "start_s": 0,
+          "stop_s": 3500
+        }
+      ],
+      "dispatches": [
+        {
+          "depart_s": 0,
+          "from_edge": "synt-v1-depot-link-1-ab",
+          "task_id": "synt-v1-install-1",
+          "to_edge": "synt-v1-well-link-1-ab",
+          "vehicle_id": "synt-v1-truck-1"
+        },
+        {
+          "depart_s": 10,
+          "from_edge": "synt-v1-depot-link-2-ab",
+          "task_id": "synt-v1-install-2",
+          "to_edge": "synt-v1-well-link-2-ab",
+          "vehicle_id": "synt-v1-truck-2"
+        }
+      ],
+      "network": {
+        "net_offset_m": [
+          0.0,
+          0.0
+        ],
+        "network_id": "synthetic-multiterrain-v1",
+        "network_sha256": "f3993eb2cbf1797c4b3d559e831ade28fbe214904594a8534a8f90b5980a3c76",
+        "proj_parameter": "!",
+        "source_id": "synthetic-multiterrain-v1"
+      }
+    },
+    "resources": {
+      "crews": [
+        {
+          "available_from_s": 0,
+          "available_until_s": 86400,
+          "crew_id": "synt-v1-crew-1",
+          "skills": [
+            "pump-install"
+          ]
+        },
+        {
+          "available_from_s": 0,
+          "available_until_s": 86400,
+          "crew_id": "synt-v1-crew-2",
+          "skills": [
+            "pump-install"
+          ]
+        },
+        {
+          "available_from_s": 0,
+          "available_until_s": 86400,
+          "crew_id": "synt-v1-crew-3",
+          "skills": [
+            "pump-install"
+          ]
+        }
+      ],
+      "equipment": [
+        {
+          "available_from_s": 0,
+          "available_until_s": 86400,
+          "equipment_id": "synt-v1-pump-1",
+          "mass_kg": 100,
+          "type": "pump"
+        },
+        {
+          "available_from_s": 0,
+          "available_until_s": 86400,
+          "equipment_id": "synt-v1-pump-2",
+          "mass_kg": 100,
+          "type": "pump"
+        },
+        {
+          "available_from_s": 0,
+          "available_until_s": 86400,
+          "equipment_id": "synt-v1-pump-3",
+          "mass_kg": 100,
+          "type": "pump"
+        }
+      ],
+      "inventory": [
+        {
+          "depot_id": "synt-v1-depot-1",
+          "item_id": "pump",
+          "quantity": 1
+        },
+        {
+          "depot_id": "synt-v1-depot-2",
+          "item_id": "pump",
+          "quantity": 1
+        },
+        {
+          "depot_id": "synt-v1-depot-3",
+          "item_id": "pump",
+          "quantity": 1
+        }
+      ],
+      "tasks": [
+        {
+          "depot_id": "synt-v1-depot-1",
+          "earliest_start_s": 0,
+          "extraction_rate_m3_day": 1,
+          "install_duration_s": 60,
+          "latest_stop_s": 86400,
+          "priority": 1,
+          "pump_duration_s": 3600,
+          "required_item_id": "pump",
+          "required_quantity": 1,
+          "required_skill": "pump-install",
+          "task_id": "synt-v1-install-1",
+          "unload_duration_s": 30,
+          "well_id": "well-1"
+        },
+        {
+          "depot_id": "synt-v1-depot-2",
+          "earliest_start_s": 0,
+          "extraction_rate_m3_day": 1,
+          "install_duration_s": 60,
+          "latest_stop_s": 86400,
+          "priority": 2,
+          "pump_duration_s": 3600,
+          "required_item_id": "pump",
+          "required_quantity": 1,
+          "required_skill": "pump-install",
+          "task_id": "synt-v1-install-2",
+          "unload_duration_s": 30,
+          "well_id": "well-2"
+        }
+      ],
+      "vehicles": [
+        {
+          "available_from_s": 0,
+          "available_until_s": 86400,
+          "capacity_kg": 1000,
+          "vehicle_id": "synt-v1-truck-1"
+        },
+        {
+          "available_from_s": 0,
+          "available_until_s": 86400,
+          "capacity_kg": 1000,
+          "vehicle_id": "synt-v1-truck-2"
+        },
+        {
+          "available_from_s": 0,
+          "available_until_s": 86400,
+          "capacity_kg": 1000,
+          "vehicle_id": "synt-v1-truck-3"
+        }
+      ]
+    }
+  },
+  "no_pump": {
+    "scenario": {
+      "id": "synthetic_multiterrain_100k",
+      "version": 1001
+    },
+    "risk_window_start_day": 0.0,
+    "risk_window_stop_day": 21900.0,
+    "network_path": null,
+    "traffic": null,
+    "resources": null
+  }
+}

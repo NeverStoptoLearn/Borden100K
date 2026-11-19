@@ -1,0 +1,74 @@
+{
+  "contract_version": "1.0.0",
+  "kind": "hydro_result",
+  "experiment_id": "synthetic-demo",
+  "run_id": "58fc4984-de61-49ab-bd57-5caed4bfc125",
+  "scenario_id": "demo",
+  "scenario_version": 1,
+  "parameter_version": "baseline-v1",
+  "model_build": {
+    "engine_id": "borden3d_scipy_fv",
+    "engine_version": "planned",
+    "code_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "config_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "seed": 42,
+  "units": {
+    "scenario_time": "s",
+    "model_time": "day",
+    "length": "m",
+    "extraction_rate": "m3/day",
+    "concentration": "mg/L",
+    "mass": "kg",
+    "cost": "CNY"
+  },
+  "data_provenance": {
+    "classification": "synthetic",
+    "calibration": "none",
+    "fixture": true,
+    "sources": [
+      {
+        "source_id": "demo",
+        "reference": "schema illustration only; not engine output",
+        "license": "project test fixture",
+        "synthetic": true
+      }
+    ]
+  },
+  "status": "succeeded",
+  "artifacts": [
+    {
+      "artifact_id": "concentration-1",
+      "path": "hydro/concentration.npz",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "media_type": "application/octet-stream",
+      "role": "concentration",
+      "units": "mg/L"
+    }
+  ],
+  "error": null,
+  "payload": {
+    "engine_copy": "root_standalone",
+    "model_signature": "0000000000000000000000000000000000000000000000000000000000000000",
+    "profile": "smoke",
+    "times_day": [
+      0,
+      14600,
+      21900
+    ],
+    "concentration_artifact_id": "concentration-1",
+    "metrics": {
+      "residual_mass_kg": 1,
+      "boundary_output_mass_kg": 1,
+      "pumped_mass_kg": 1,
+      "net_source_input_mass_kg": 3,
+      "max_drawdown_m": 0.1,
+      "max_concentration_mg_L": 500,
+      "water_balance_max_m3_day": 1e-09,
+      "solute_mass_balance_relative": 1e-09
+    },
+    "risk_interpretation": "synthetic_model_indicator_not_health_risk",
+    "risk_window_start_day": 14600,
+    "risk_window_stop_day": 21900
+  }
+}

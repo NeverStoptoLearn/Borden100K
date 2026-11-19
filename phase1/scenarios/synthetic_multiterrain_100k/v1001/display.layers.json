@@ -1,0 +1,8561 @@
+{
+  "bridges": [
+    {
+      "edge_ids": [
+        "bridge-40000-ab",
+        "bridge-40000-ba"
+      ],
+      "id": "synt-v1-bridge-40000",
+      "line_m": [
+        [
+          48000,
+          40000
+        ],
+        [
+          52000,
+          40000
+        ]
+      ],
+      "synthetic": true
+    },
+    {
+      "edge_ids": [
+        "bridge-50000-ab",
+        "bridge-50000-ba"
+      ],
+      "id": "synt-v1-bridge-50000",
+      "line_m": [
+        [
+          48000,
+          50000
+        ],
+        [
+          52000,
+          50000
+        ]
+      ],
+      "synthetic": true
+    },
+    {
+      "edge_ids": [
+        "bridge-60000-ab",
+        "bridge-60000-ba"
+      ],
+      "id": "synt-v1-bridge-60000",
+      "line_m": [
+        [
+          48000,
+          60000
+        ],
+        [
+          52000,
+          60000
+        ]
+      ],
+      "synthetic": true
+    }
+  ],
+  "cities": [
+    {
+      "id": "synt-v1-city",
+      "label": "Synthetic city",
+      "polygon_m": [
+        [
+          55000,
+          35000
+        ],
+        [
+          80000,
+          35000
+        ],
+        [
+          80000,
+          65000
+        ],
+        [
+          55000,
+          65000
+        ],
+        [
+          55000,
+          35000
+        ]
+      ],
+      "synthetic": true
+    }
+  ],
+  "coordinate_frame": "synthetic_local_m",
+  "depots": [
+    {
+      "depot_id": "synt-v1-depot-1",
+      "position_m": {
+        "x_m": 39000,
+        "y_m": 50000
+      },
+      "synthetic": true
+    },
+    {
+      "depot_id": "synt-v1-depot-2",
+      "position_m": {
+        "x_m": 39000,
+        "y_m": 50050
+      },
+      "synthetic": true
+    },
+    {
+      "depot_id": "synt-v1-depot-3",
+      "position_m": {
+        "x_m": 30000,
+        "y_m": 40000
+      },
+      "synthetic": true
+    }
+  ],
+  "display_version": "dual-display-v1",
+  "extent_m": [
+    0,
+    0,
+    100000,
+    100000
+  ],
+  "hydro_placement": {
+    "rotation_rad": 0,
+    "synthetic": true,
+    "translation_m": [
+      64472.467647058824,
+      49519.03823529412
+    ],
+    "view_only": true
+  },
+  "rivers": [
+    {
+      "id": "synt-v1-river",
+      "polygon_m": [
+        [
+          48000,
+          0
+        ],
+        [
+          52000,
+          0
+        ],
+        [
+          52000,
+          100000
+        ],
+        [
+          48000,
+          100000
+        ],
+        [
+          48000,
+          0
+        ]
+      ],
+      "synthetic": true
+    }
+  ],
+  "roads": [
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "approach-east-40000-ab",
+      "points": [
+        [
+          52004.0,
+          39995.2
+        ],
+        [
+          59992.8,
+          39995.2
+        ]
+      ],
+      "road_class": "arterial",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "approach-east-40000-ba",
+      "points": [
+        [
+          59992.8,
+          40004.8
+        ],
+        [
+          52004.0,
+          40004.8
+        ]
+      ],
+      "road_class": "arterial",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "approach-east-50000-ab",
+      "points": [
+        [
+          52004.0,
+          49995.2
+        ],
+        [
+          59992.8,
+          49995.2
+        ]
+      ],
+      "road_class": "arterial",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "approach-east-50000-ba",
+      "points": [
+        [
+          59992.8,
+          50004.8
+        ],
+        [
+          52004.0,
+          50004.8
+        ]
+      ],
+      "road_class": "arterial",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "approach-east-60000-ab",
+      "points": [
+        [
+          52004.0,
+          59995.2
+        ],
+        [
+          59992.8,
+          59995.2
+        ]
+      ],
+      "road_class": "arterial",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "approach-east-60000-ba",
+      "points": [
+        [
+          59992.8,
+          60004.8
+        ],
+        [
+          52004.0,
+          60004.8
+        ]
+      ],
+      "road_class": "arterial",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "approach-west-40000-ab",
+      "points": [
+        [
+          40007.2,
+          39995.2
+        ],
+        [
+          47996.0,
+          39995.2
+        ]
+      ],
+      "road_class": "arterial",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "approach-west-40000-ba",
+      "points": [
+        [
+          47996.0,
+          40004.8
+        ],
+        [
+          40007.2,
+          40004.8
+        ]
+      ],
+      "road_class": "arterial",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "approach-west-50000-ab",
+      "points": [
+        [
+          40007.2,
+          49995.2
+        ],
+        [
+          47996.0,
+          49995.2
+        ]
+      ],
+      "road_class": "arterial",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "approach-west-50000-ba",
+      "points": [
+        [
+          47996.0,
+          50004.8
+        ],
+        [
+          40007.2,
+          50004.8
+        ]
+      ],
+      "road_class": "arterial",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "approach-west-60000-ab",
+      "points": [
+        [
+          40007.2,
+          59995.2
+        ],
+        [
+          47996.0,
+          59995.2
+        ]
+      ],
+      "road_class": "arterial",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "approach-west-60000-ba",
+      "points": [
+        [
+          47996.0,
+          60004.8
+        ],
+        [
+          40007.2,
+          60004.8
+        ]
+      ],
+      "road_class": "arterial",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "bridge-40000-ab",
+      "points": [
+        [
+          48004.0,
+          39998.4
+        ],
+        [
+          51996.0,
+          39998.4
+        ]
+      ],
+      "road_class": "bridge",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "bridge-40000-ba",
+      "points": [
+        [
+          51996.0,
+          40001.6
+        ],
+        [
+          48004.0,
+          40001.6
+        ]
+      ],
+      "road_class": "bridge",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "bridge-50000-ab",
+      "points": [
+        [
+          48004.0,
+          49998.4
+        ],
+        [
+          51996.0,
+          49998.4
+        ]
+      ],
+      "road_class": "bridge",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "bridge-50000-ba",
+      "points": [
+        [
+          51996.0,
+          50001.6
+        ],
+        [
+          48004.0,
+          50001.6
+        ]
+      ],
+      "road_class": "bridge",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "bridge-60000-ab",
+      "points": [
+        [
+          48004.0,
+          59998.4
+        ],
+        [
+          51996.0,
+          59998.4
+        ]
+      ],
+      "road_class": "bridge",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "bridge-60000-ba",
+      "points": [
+        [
+          51996.0,
+          60001.6
+        ],
+        [
+          48004.0,
+          60001.6
+        ]
+      ],
+      "road_class": "bridge",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-10000-20000-10000-ab",
+      "points": [
+        [
+          10007.2,
+          9998.4
+        ],
+        [
+          19992.8,
+          9998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-10000-20000-10000-ba",
+      "points": [
+        [
+          19992.8,
+          10001.6
+        ],
+        [
+          10007.2,
+          10001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-10000-20000-20000-ab",
+      "points": [
+        [
+          10007.2,
+          19998.4
+        ],
+        [
+          19992.8,
+          19998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-10000-20000-20000-ba",
+      "points": [
+        [
+          19992.8,
+          20001.6
+        ],
+        [
+          10007.2,
+          20001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-10000-20000-30000-ab",
+      "points": [
+        [
+          10007.2,
+          29998.4
+        ],
+        [
+          19992.8,
+          29998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-10000-20000-30000-ba",
+      "points": [
+        [
+          19992.8,
+          30001.6
+        ],
+        [
+          10007.2,
+          30001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-10000-20000-40000-ab",
+      "points": [
+        [
+          10007.2,
+          39998.4
+        ],
+        [
+          19992.8,
+          39998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-10000-20000-40000-ba",
+      "points": [
+        [
+          19992.8,
+          40001.6
+        ],
+        [
+          10007.2,
+          40001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-10000-20000-500-ab",
+      "points": [
+        [
+          10007.2,
+          498.4
+        ],
+        [
+          19992.8,
+          498.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-10000-20000-500-ba",
+      "points": [
+        [
+          19992.8,
+          501.6
+        ],
+        [
+          10007.2,
+          501.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-10000-20000-50000-ab",
+      "points": [
+        [
+          10007.2,
+          49995.2
+        ],
+        [
+          19992.8,
+          49995.2
+        ]
+      ],
+      "road_class": "arterial",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-10000-20000-50000-ba",
+      "points": [
+        [
+          19992.8,
+          50004.8
+        ],
+        [
+          10007.2,
+          50004.8
+        ]
+      ],
+      "road_class": "arterial",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-10000-20000-60000-ab",
+      "points": [
+        [
+          10007.2,
+          59998.4
+        ],
+        [
+          19992.8,
+          59998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-10000-20000-60000-ba",
+      "points": [
+        [
+          19992.8,
+          60001.6
+        ],
+        [
+          10007.2,
+          60001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-10000-20000-70000-ab",
+      "points": [
+        [
+          10007.2,
+          69998.4
+        ],
+        [
+          19992.8,
+          69998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-10000-20000-70000-ba",
+      "points": [
+        [
+          19992.8,
+          70001.6
+        ],
+        [
+          10007.2,
+          70001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-10000-20000-80000-ab",
+      "points": [
+        [
+          10007.2,
+          79998.4
+        ],
+        [
+          19992.8,
+          79998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-10000-20000-80000-ba",
+      "points": [
+        [
+          19992.8,
+          80001.6
+        ],
+        [
+          10007.2,
+          80001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-10000-20000-90000-ab",
+      "points": [
+        [
+          10007.2,
+          89998.4
+        ],
+        [
+          19992.8,
+          89998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-10000-20000-90000-ba",
+      "points": [
+        [
+          19992.8,
+          90001.6
+        ],
+        [
+          10007.2,
+          90001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-10000-20000-99500-ab",
+      "points": [
+        [
+          10007.2,
+          99498.4
+        ],
+        [
+          19992.8,
+          99498.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-10000-20000-99500-ba",
+      "points": [
+        [
+          19992.8,
+          99501.6
+        ],
+        [
+          10007.2,
+          99501.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-20000-30000-10000-ab",
+      "points": [
+        [
+          20007.2,
+          9998.4
+        ],
+        [
+          29992.8,
+          9998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-20000-30000-10000-ba",
+      "points": [
+        [
+          29992.8,
+          10001.6
+        ],
+        [
+          20007.2,
+          10001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-20000-30000-20000-ab",
+      "points": [
+        [
+          20007.2,
+          19998.4
+        ],
+        [
+          29992.8,
+          19998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-20000-30000-20000-ba",
+      "points": [
+        [
+          29992.8,
+          20001.6
+        ],
+        [
+          20007.2,
+          20001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-20000-30000-30000-ab",
+      "points": [
+        [
+          20007.2,
+          29998.4
+        ],
+        [
+          29992.8,
+          29998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-20000-30000-30000-ba",
+      "points": [
+        [
+          29992.8,
+          30001.6
+        ],
+        [
+          20007.2,
+          30001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-20000-30000-40000-ab",
+      "points": [
+        [
+          20007.2,
+          39998.4
+        ],
+        [
+          29992.8,
+          39998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-20000-30000-40000-ba",
+      "points": [
+        [
+          29992.8,
+          40001.6
+        ],
+        [
+          20007.2,
+          40001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-20000-30000-500-ab",
+      "points": [
+        [
+          20007.2,
+          498.4
+        ],
+        [
+          29992.8,
+          498.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-20000-30000-500-ba",
+      "points": [
+        [
+          29992.8,
+          501.6
+        ],
+        [
+          20007.2,
+          501.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-20000-30000-50000-ab",
+      "points": [
+        [
+          20007.2,
+          49995.2
+        ],
+        [
+          29992.8,
+          49995.2
+        ]
+      ],
+      "road_class": "arterial",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-20000-30000-50000-ba",
+      "points": [
+        [
+          29992.8,
+          50004.8
+        ],
+        [
+          20007.2,
+          50004.8
+        ]
+      ],
+      "road_class": "arterial",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-20000-30000-60000-ab",
+      "points": [
+        [
+          20007.2,
+          59998.4
+        ],
+        [
+          29992.8,
+          59998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-20000-30000-60000-ba",
+      "points": [
+        [
+          29992.8,
+          60001.6
+        ],
+        [
+          20007.2,
+          60001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-20000-30000-70000-ab",
+      "points": [
+        [
+          20007.2,
+          69998.4
+        ],
+        [
+          29992.8,
+          69998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-20000-30000-70000-ba",
+      "points": [
+        [
+          29992.8,
+          70001.6
+        ],
+        [
+          20007.2,
+          70001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-20000-30000-80000-ab",
+      "points": [
+        [
+          20007.2,
+          79998.4
+        ],
+        [
+          29992.8,
+          79998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-20000-30000-80000-ba",
+      "points": [
+        [
+          29992.8,
+          80001.6
+        ],
+        [
+          20007.2,
+          80001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-20000-30000-90000-ab",
+      "points": [
+        [
+          20007.2,
+          89998.4
+        ],
+        [
+          29992.8,
+          89998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-20000-30000-90000-ba",
+      "points": [
+        [
+          29992.8,
+          90001.6
+        ],
+        [
+          20007.2,
+          90001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-20000-30000-99500-ab",
+      "points": [
+        [
+          20007.2,
+          99498.4
+        ],
+        [
+          29992.8,
+          99498.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-20000-30000-99500-ba",
+      "points": [
+        [
+          29992.8,
+          99501.6
+        ],
+        [
+          20007.2,
+          99501.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-30000-40000-10000-ab",
+      "points": [
+        [
+          30007.2,
+          9998.4
+        ],
+        [
+          39992.8,
+          9998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-30000-40000-10000-ba",
+      "points": [
+        [
+          39992.8,
+          10001.6
+        ],
+        [
+          30007.2,
+          10001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-30000-40000-20000-ab",
+      "points": [
+        [
+          30007.2,
+          19998.4
+        ],
+        [
+          39992.8,
+          19998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-30000-40000-20000-ba",
+      "points": [
+        [
+          39992.8,
+          20001.6
+        ],
+        [
+          30007.2,
+          20001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-30000-40000-30000-ab",
+      "points": [
+        [
+          30007.2,
+          29998.4
+        ],
+        [
+          39992.8,
+          29998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-30000-40000-30000-ba",
+      "points": [
+        [
+          39992.8,
+          30001.6
+        ],
+        [
+          30007.2,
+          30001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-30000-40000-40000-ab",
+      "points": [
+        [
+          30007.2,
+          39998.4
+        ],
+        [
+          39992.8,
+          39998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-30000-40000-40000-ba",
+      "points": [
+        [
+          39992.8,
+          40001.6
+        ],
+        [
+          30007.2,
+          40001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-30000-40000-500-ab",
+      "points": [
+        [
+          30007.2,
+          498.4
+        ],
+        [
+          39996.8,
+          498.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-30000-40000-500-ba",
+      "points": [
+        [
+          39996.8,
+          501.6
+        ],
+        [
+          30007.2,
+          501.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-30000-40000-50000-ab",
+      "points": [
+        [
+          30007.2,
+          49995.2
+        ],
+        [
+          39992.8,
+          49995.2
+        ]
+      ],
+      "road_class": "arterial",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-30000-40000-50000-ba",
+      "points": [
+        [
+          39992.8,
+          50004.8
+        ],
+        [
+          30007.2,
+          50004.8
+        ]
+      ],
+      "road_class": "arterial",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-30000-40000-60000-ab",
+      "points": [
+        [
+          30007.2,
+          59998.4
+        ],
+        [
+          39992.8,
+          59998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-30000-40000-60000-ba",
+      "points": [
+        [
+          39992.8,
+          60001.6
+        ],
+        [
+          30007.2,
+          60001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-30000-40000-70000-ab",
+      "points": [
+        [
+          30007.2,
+          69998.4
+        ],
+        [
+          39992.8,
+          69998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-30000-40000-70000-ba",
+      "points": [
+        [
+          39992.8,
+          70001.6
+        ],
+        [
+          30007.2,
+          70001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-30000-40000-80000-ab",
+      "points": [
+        [
+          30007.2,
+          79998.4
+        ],
+        [
+          39992.8,
+          79998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-30000-40000-80000-ba",
+      "points": [
+        [
+          39992.8,
+          80001.6
+        ],
+        [
+          30007.2,
+          80001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-30000-40000-90000-ab",
+      "points": [
+        [
+          30007.2,
+          89998.4
+        ],
+        [
+          39992.8,
+          89998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-30000-40000-90000-ba",
+      "points": [
+        [
+          39992.8,
+          90001.6
+        ],
+        [
+          30007.2,
+          90001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-30000-40000-99500-ab",
+      "points": [
+        [
+          30007.2,
+          99498.4
+        ],
+        [
+          39996.8,
+          99498.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-30000-40000-99500-ba",
+      "points": [
+        [
+          39996.8,
+          99501.6
+        ],
+        [
+          30007.2,
+          99501.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-500-10000-10000-ab",
+      "points": [
+        [
+          507.2,
+          9998.4
+        ],
+        [
+          9992.8,
+          9998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-500-10000-10000-ba",
+      "points": [
+        [
+          9992.8,
+          10001.6
+        ],
+        [
+          507.2,
+          10001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-500-10000-20000-ab",
+      "points": [
+        [
+          507.2,
+          19998.4
+        ],
+        [
+          9992.8,
+          19998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-500-10000-20000-ba",
+      "points": [
+        [
+          9992.8,
+          20001.6
+        ],
+        [
+          507.2,
+          20001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-500-10000-30000-ab",
+      "points": [
+        [
+          507.2,
+          29998.4
+        ],
+        [
+          9992.8,
+          29998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-500-10000-30000-ba",
+      "points": [
+        [
+          9992.8,
+          30001.6
+        ],
+        [
+          507.2,
+          30001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-500-10000-40000-ab",
+      "points": [
+        [
+          507.2,
+          39998.4
+        ],
+        [
+          9992.8,
+          39998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-500-10000-40000-ba",
+      "points": [
+        [
+          9992.8,
+          40001.6
+        ],
+        [
+          507.2,
+          40001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-500-10000-500-ab",
+      "points": [
+        [
+          503.2,
+          498.4
+        ],
+        [
+          9992.8,
+          498.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-500-10000-500-ba",
+      "points": [
+        [
+          9992.8,
+          501.6
+        ],
+        [
+          503.2,
+          501.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-500-10000-50000-ab",
+      "points": [
+        [
+          507.2,
+          49995.2
+        ],
+        [
+          9992.8,
+          49995.2
+        ]
+      ],
+      "road_class": "arterial",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-500-10000-50000-ba",
+      "points": [
+        [
+          9992.8,
+          50004.8
+        ],
+        [
+          507.2,
+          50004.8
+        ]
+      ],
+      "road_class": "arterial",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-500-10000-60000-ab",
+      "points": [
+        [
+          507.2,
+          59998.4
+        ],
+        [
+          9992.8,
+          59998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-500-10000-60000-ba",
+      "points": [
+        [
+          9992.8,
+          60001.6
+        ],
+        [
+          507.2,
+          60001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-500-10000-70000-ab",
+      "points": [
+        [
+          507.2,
+          69998.4
+        ],
+        [
+          9992.8,
+          69998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-500-10000-70000-ba",
+      "points": [
+        [
+          9992.8,
+          70001.6
+        ],
+        [
+          507.2,
+          70001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-500-10000-80000-ab",
+      "points": [
+        [
+          507.2,
+          79998.4
+        ],
+        [
+          9992.8,
+          79998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-500-10000-80000-ba",
+      "points": [
+        [
+          9992.8,
+          80001.6
+        ],
+        [
+          507.2,
+          80001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-500-10000-90000-ab",
+      "points": [
+        [
+          507.2,
+          89998.4
+        ],
+        [
+          9992.8,
+          89998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-500-10000-90000-ba",
+      "points": [
+        [
+          9992.8,
+          90001.6
+        ],
+        [
+          507.2,
+          90001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-500-10000-99500-ab",
+      "points": [
+        [
+          503.2,
+          99498.4
+        ],
+        [
+          9992.8,
+          99498.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-500-10000-99500-ba",
+      "points": [
+        [
+          9992.8,
+          99501.6
+        ],
+        [
+          503.2,
+          99501.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-60000-70000-10000-ab",
+      "points": [
+        [
+          60007.2,
+          9998.4
+        ],
+        [
+          69992.8,
+          9998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-60000-70000-10000-ba",
+      "points": [
+        [
+          69992.8,
+          10001.6
+        ],
+        [
+          60007.2,
+          10001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-60000-70000-20000-ab",
+      "points": [
+        [
+          60007.2,
+          19998.4
+        ],
+        [
+          69992.8,
+          19998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-60000-70000-20000-ba",
+      "points": [
+        [
+          69992.8,
+          20001.6
+        ],
+        [
+          60007.2,
+          20001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-60000-70000-30000-ab",
+      "points": [
+        [
+          60007.2,
+          29998.4
+        ],
+        [
+          69992.8,
+          29998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-60000-70000-30000-ba",
+      "points": [
+        [
+          69992.8,
+          30001.6
+        ],
+        [
+          60007.2,
+          30001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-60000-70000-40000-ab",
+      "points": [
+        [
+          60007.2,
+          39998.4
+        ],
+        [
+          69992.8,
+          39998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-60000-70000-40000-ba",
+      "points": [
+        [
+          69992.8,
+          40001.6
+        ],
+        [
+          60007.2,
+          40001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-60000-70000-500-ab",
+      "points": [
+        [
+          60003.2,
+          498.4
+        ],
+        [
+          69992.8,
+          498.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-60000-70000-500-ba",
+      "points": [
+        [
+          69992.8,
+          501.6
+        ],
+        [
+          60003.2,
+          501.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-60000-70000-50000-ab",
+      "points": [
+        [
+          60007.2,
+          49995.2
+        ],
+        [
+          69992.8,
+          49995.2
+        ]
+      ],
+      "road_class": "arterial",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-60000-70000-50000-ba",
+      "points": [
+        [
+          69992.8,
+          50004.8
+        ],
+        [
+          60007.2,
+          50004.8
+        ]
+      ],
+      "road_class": "arterial",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-60000-70000-60000-ab",
+      "points": [
+        [
+          60007.2,
+          59998.4
+        ],
+        [
+          69992.8,
+          59998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-60000-70000-60000-ba",
+      "points": [
+        [
+          69992.8,
+          60001.6
+        ],
+        [
+          60007.2,
+          60001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-60000-70000-70000-ab",
+      "points": [
+        [
+          60007.2,
+          69998.4
+        ],
+        [
+          69992.8,
+          69998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-60000-70000-70000-ba",
+      "points": [
+        [
+          69992.8,
+          70001.6
+        ],
+        [
+          60007.2,
+          70001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-60000-70000-80000-ab",
+      "points": [
+        [
+          60007.2,
+          79998.4
+        ],
+        [
+          69992.8,
+          79998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-60000-70000-80000-ba",
+      "points": [
+        [
+          69992.8,
+          80001.6
+        ],
+        [
+          60007.2,
+          80001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-60000-70000-90000-ab",
+      "points": [
+        [
+          60007.2,
+          89998.4
+        ],
+        [
+          69992.8,
+          89998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-60000-70000-90000-ba",
+      "points": [
+        [
+          69992.8,
+          90001.6
+        ],
+        [
+          60007.2,
+          90001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-60000-70000-99500-ab",
+      "points": [
+        [
+          60003.2,
+          99498.4
+        ],
+        [
+          69992.8,
+          99498.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-60000-70000-99500-ba",
+      "points": [
+        [
+          69992.8,
+          99501.6
+        ],
+        [
+          60003.2,
+          99501.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-70000-80000-10000-ab",
+      "points": [
+        [
+          70007.2,
+          9998.4
+        ],
+        [
+          79992.8,
+          9998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-70000-80000-10000-ba",
+      "points": [
+        [
+          79992.8,
+          10001.6
+        ],
+        [
+          70007.2,
+          10001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-70000-80000-20000-ab",
+      "points": [
+        [
+          70007.2,
+          19998.4
+        ],
+        [
+          79992.8,
+          19998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-70000-80000-20000-ba",
+      "points": [
+        [
+          79992.8,
+          20001.6
+        ],
+        [
+          70007.2,
+          20001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-70000-80000-30000-ab",
+      "points": [
+        [
+          70007.2,
+          29998.4
+        ],
+        [
+          79992.8,
+          29998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-70000-80000-30000-ba",
+      "points": [
+        [
+          79992.8,
+          30001.6
+        ],
+        [
+          70007.2,
+          30001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-70000-80000-40000-ab",
+      "points": [
+        [
+          70007.2,
+          39998.4
+        ],
+        [
+          79992.8,
+          39998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-70000-80000-40000-ba",
+      "points": [
+        [
+          79992.8,
+          40001.6
+        ],
+        [
+          70007.2,
+          40001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-70000-80000-500-ab",
+      "points": [
+        [
+          70007.2,
+          498.4
+        ],
+        [
+          79992.8,
+          498.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-70000-80000-500-ba",
+      "points": [
+        [
+          79992.8,
+          501.6
+        ],
+        [
+          70007.2,
+          501.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-70000-80000-50000-ab",
+      "points": [
+        [
+          70007.2,
+          49995.2
+        ],
+        [
+          79992.8,
+          49995.2
+        ]
+      ],
+      "road_class": "arterial",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-70000-80000-50000-ba",
+      "points": [
+        [
+          79992.8,
+          50004.8
+        ],
+        [
+          70007.2,
+          50004.8
+        ]
+      ],
+      "road_class": "arterial",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-70000-80000-60000-ab",
+      "points": [
+        [
+          70007.2,
+          59998.4
+        ],
+        [
+          79992.8,
+          59998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-70000-80000-60000-ba",
+      "points": [
+        [
+          79992.8,
+          60001.6
+        ],
+        [
+          70007.2,
+          60001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-70000-80000-70000-ab",
+      "points": [
+        [
+          70007.2,
+          69998.4
+        ],
+        [
+          79992.8,
+          69998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-70000-80000-70000-ba",
+      "points": [
+        [
+          79992.8,
+          70001.6
+        ],
+        [
+          70007.2,
+          70001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-70000-80000-80000-ab",
+      "points": [
+        [
+          70007.2,
+          79998.4
+        ],
+        [
+          79992.8,
+          79998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-70000-80000-80000-ba",
+      "points": [
+        [
+          79992.8,
+          80001.6
+        ],
+        [
+          70007.2,
+          80001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-70000-80000-90000-ab",
+      "points": [
+        [
+          70007.2,
+          89998.4
+        ],
+        [
+          79992.8,
+          89998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-70000-80000-90000-ba",
+      "points": [
+        [
+          79992.8,
+          90001.6
+        ],
+        [
+          70007.2,
+          90001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-70000-80000-99500-ab",
+      "points": [
+        [
+          70007.2,
+          99498.4
+        ],
+        [
+          79992.8,
+          99498.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-70000-80000-99500-ba",
+      "points": [
+        [
+          79992.8,
+          99501.6
+        ],
+        [
+          70007.2,
+          99501.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-80000-90000-10000-ab",
+      "points": [
+        [
+          80007.2,
+          9998.4
+        ],
+        [
+          89992.8,
+          9998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-80000-90000-10000-ba",
+      "points": [
+        [
+          89992.8,
+          10001.6
+        ],
+        [
+          80007.2,
+          10001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-80000-90000-20000-ab",
+      "points": [
+        [
+          80007.2,
+          19998.4
+        ],
+        [
+          89992.8,
+          19998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-80000-90000-20000-ba",
+      "points": [
+        [
+          89992.8,
+          20001.6
+        ],
+        [
+          80007.2,
+          20001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-80000-90000-30000-ab",
+      "points": [
+        [
+          80007.2,
+          29998.4
+        ],
+        [
+          89992.8,
+          29998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-80000-90000-30000-ba",
+      "points": [
+        [
+          89992.8,
+          30001.6
+        ],
+        [
+          80007.2,
+          30001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-80000-90000-40000-ab",
+      "points": [
+        [
+          80007.2,
+          39998.4
+        ],
+        [
+          89992.8,
+          39998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-80000-90000-40000-ba",
+      "points": [
+        [
+          89992.8,
+          40001.6
+        ],
+        [
+          80007.2,
+          40001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-80000-90000-500-ab",
+      "points": [
+        [
+          80007.2,
+          498.4
+        ],
+        [
+          89992.8,
+          498.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-80000-90000-500-ba",
+      "points": [
+        [
+          89992.8,
+          501.6
+        ],
+        [
+          80007.2,
+          501.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-80000-90000-50000-ab",
+      "points": [
+        [
+          80007.2,
+          49995.2
+        ],
+        [
+          89992.8,
+          49995.2
+        ]
+      ],
+      "road_class": "arterial",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-80000-90000-50000-ba",
+      "points": [
+        [
+          89992.8,
+          50004.8
+        ],
+        [
+          80007.2,
+          50004.8
+        ]
+      ],
+      "road_class": "arterial",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-80000-90000-60000-ab",
+      "points": [
+        [
+          80007.2,
+          59998.4
+        ],
+        [
+          89992.8,
+          59998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-80000-90000-60000-ba",
+      "points": [
+        [
+          89992.8,
+          60001.6
+        ],
+        [
+          80007.2,
+          60001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-80000-90000-70000-ab",
+      "points": [
+        [
+          80007.2,
+          69998.4
+        ],
+        [
+          89992.8,
+          69998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-80000-90000-70000-ba",
+      "points": [
+        [
+          89992.8,
+          70001.6
+        ],
+        [
+          80007.2,
+          70001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-80000-90000-80000-ab",
+      "points": [
+        [
+          80007.2,
+          79998.4
+        ],
+        [
+          89992.8,
+          79998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-80000-90000-80000-ba",
+      "points": [
+        [
+          89992.8,
+          80001.6
+        ],
+        [
+          80007.2,
+          80001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-80000-90000-90000-ab",
+      "points": [
+        [
+          80007.2,
+          89998.4
+        ],
+        [
+          89992.8,
+          89998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-80000-90000-90000-ba",
+      "points": [
+        [
+          89992.8,
+          90001.6
+        ],
+        [
+          80007.2,
+          90001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-80000-90000-99500-ab",
+      "points": [
+        [
+          80007.2,
+          99498.4
+        ],
+        [
+          89992.8,
+          99498.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-80000-90000-99500-ba",
+      "points": [
+        [
+          89992.8,
+          99501.6
+        ],
+        [
+          80007.2,
+          99501.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-90000-99500-10000-ab",
+      "points": [
+        [
+          90007.2,
+          9998.4
+        ],
+        [
+          99492.8,
+          9998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-90000-99500-10000-ba",
+      "points": [
+        [
+          99492.8,
+          10001.6
+        ],
+        [
+          90007.2,
+          10001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-90000-99500-20000-ab",
+      "points": [
+        [
+          90007.2,
+          19998.4
+        ],
+        [
+          99492.8,
+          19998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-90000-99500-20000-ba",
+      "points": [
+        [
+          99492.8,
+          20001.6
+        ],
+        [
+          90007.2,
+          20001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-90000-99500-30000-ab",
+      "points": [
+        [
+          90007.2,
+          29998.4
+        ],
+        [
+          99492.8,
+          29998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-90000-99500-30000-ba",
+      "points": [
+        [
+          99492.8,
+          30001.6
+        ],
+        [
+          90007.2,
+          30001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-90000-99500-40000-ab",
+      "points": [
+        [
+          90007.2,
+          39998.4
+        ],
+        [
+          99492.8,
+          39998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-90000-99500-40000-ba",
+      "points": [
+        [
+          99492.8,
+          40001.6
+        ],
+        [
+          90007.2,
+          40001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-90000-99500-500-ab",
+      "points": [
+        [
+          90007.2,
+          498.4
+        ],
+        [
+          99496.8,
+          498.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-90000-99500-500-ba",
+      "points": [
+        [
+          99496.8,
+          501.6
+        ],
+        [
+          90007.2,
+          501.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-90000-99500-50000-ab",
+      "points": [
+        [
+          90007.2,
+          49995.2
+        ],
+        [
+          99492.8,
+          49995.2
+        ]
+      ],
+      "road_class": "arterial",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-90000-99500-50000-ba",
+      "points": [
+        [
+          99492.8,
+          50004.8
+        ],
+        [
+          90007.2,
+          50004.8
+        ]
+      ],
+      "road_class": "arterial",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-90000-99500-60000-ab",
+      "points": [
+        [
+          90007.2,
+          59998.4
+        ],
+        [
+          99492.8,
+          59998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-90000-99500-60000-ba",
+      "points": [
+        [
+          99492.8,
+          60001.6
+        ],
+        [
+          90007.2,
+          60001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-90000-99500-70000-ab",
+      "points": [
+        [
+          90007.2,
+          69998.4
+        ],
+        [
+          99492.8,
+          69998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-90000-99500-70000-ba",
+      "points": [
+        [
+          99492.8,
+          70001.6
+        ],
+        [
+          90007.2,
+          70001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-90000-99500-80000-ab",
+      "points": [
+        [
+          90007.2,
+          79998.4
+        ],
+        [
+          99492.8,
+          79998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-90000-99500-80000-ba",
+      "points": [
+        [
+          99492.8,
+          80001.6
+        ],
+        [
+          90007.2,
+          80001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-90000-99500-90000-ab",
+      "points": [
+        [
+          90009.46,
+          89998.4
+        ],
+        [
+          99492.8,
+          89998.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-90000-99500-90000-ba",
+      "points": [
+        [
+          99492.8,
+          90001.6
+        ],
+        [
+          90009.46,
+          90001.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-90000-99500-99500-ab",
+      "points": [
+        [
+          90007.2,
+          99498.4
+        ],
+        [
+          99496.8,
+          99498.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "h-90000-99500-99500-ba",
+      "points": [
+        [
+          99496.8,
+          99501.6
+        ],
+        [
+          90007.2,
+          99501.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "synt-v1-ban-entry",
+      "points": [
+        [
+          70000.0,
+          50010.4
+        ],
+        [
+          70000.0,
+          50998.4
+        ]
+      ],
+      "road_class": "local",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "synt-v1-ban-exit",
+      "points": [
+        [
+          80000.0,
+          50998.4
+        ],
+        [
+          80000.0,
+          50010.4
+        ]
+      ],
+      "road_class": "local",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "delivery"
+      ],
+      "edge_id": "synt-v1-ban-only",
+      "points": [
+        [
+          70001.6,
+          51000.0
+        ],
+        [
+          79998.4,
+          51000.0
+        ]
+      ],
+      "road_class": "local",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "synt-v1-depot-link-1-ab",
+      "points": [
+        [
+          39000.0,
+          49998.4
+        ],
+        [
+          39992.8,
+          49998.4
+        ]
+      ],
+      "road_class": "local",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "synt-v1-depot-link-1-ba",
+      "points": [
+        [
+          39992.8,
+          50001.6
+        ],
+        [
+          39000.0,
+          50001.6
+        ]
+      ],
+      "road_class": "local",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "synt-v1-depot-link-2-ab",
+      "points": [
+        [
+          38999.92,
+          50048.4
+        ],
+        [
+          39992.8,
+          49998.76
+        ]
+      ],
+      "road_class": "local",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "synt-v1-depot-link-2-ba",
+      "points": [
+        [
+          39992.8,
+          50001.96
+        ],
+        [
+          39000.08,
+          50051.6
+        ]
+      ],
+      "road_class": "local",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "synt-v1-oneway-entry",
+      "points": [
+        [
+          90007.16,
+          90007.16
+        ],
+        [
+          94999.53,
+          94999.53
+        ]
+      ],
+      "road_class": "local",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "synt-v1-oneway-first",
+      "points": [
+        [
+          95000.66,
+          95000.0
+        ],
+        [
+          96000.0,
+          95000.0
+        ]
+      ],
+      "road_class": "local",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "synt-v1-oneway-last",
+      "points": [
+        [
+          96000.0,
+          95000.0
+        ],
+        [
+          97000.0,
+          95000.0
+        ]
+      ],
+      "road_class": "local",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "synt-v1-well-link-1-ab",
+      "points": [
+        [
+          60007.2,
+          49998.4
+        ],
+        [
+          65000.0,
+          49998.4
+        ]
+      ],
+      "road_class": "local",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "synt-v1-well-link-1-ba",
+      "points": [
+        [
+          65000.0,
+          50001.6
+        ],
+        [
+          60007.2,
+          50001.6
+        ]
+      ],
+      "road_class": "local",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "synt-v1-well-link-2-ab",
+      "points": [
+        [
+          60007.2,
+          49998.4
+        ],
+        [
+          65081.16,
+          49998.4
+        ]
+      ],
+      "road_class": "local",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "synt-v1-well-link-2-ba",
+      "points": [
+        [
+          65081.16,
+          50001.6
+        ],
+        [
+          60007.2,
+          50001.6
+        ]
+      ],
+      "road_class": "local",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-10000-10000-20000-ab",
+      "points": [
+        [
+          10001.6,
+          10007.2
+        ],
+        [
+          10001.6,
+          19992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-10000-10000-20000-ba",
+      "points": [
+        [
+          9998.4,
+          19992.8
+        ],
+        [
+          9998.4,
+          10007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-10000-20000-30000-ab",
+      "points": [
+        [
+          10001.6,
+          20007.2
+        ],
+        [
+          10001.6,
+          29992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-10000-20000-30000-ba",
+      "points": [
+        [
+          9998.4,
+          29992.8
+        ],
+        [
+          9998.4,
+          20007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-10000-30000-40000-ab",
+      "points": [
+        [
+          10001.6,
+          30007.2
+        ],
+        [
+          10001.6,
+          39992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-10000-30000-40000-ba",
+      "points": [
+        [
+          9998.4,
+          39992.8
+        ],
+        [
+          9998.4,
+          30007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-10000-40000-50000-ab",
+      "points": [
+        [
+          10001.6,
+          40007.2
+        ],
+        [
+          10001.6,
+          49989.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-10000-40000-50000-ba",
+      "points": [
+        [
+          9998.4,
+          49989.6
+        ],
+        [
+          9998.4,
+          40007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-10000-500-10000-ab",
+      "points": [
+        [
+          10001.6,
+          507.2
+        ],
+        [
+          10001.6,
+          9992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-10000-500-10000-ba",
+      "points": [
+        [
+          9998.4,
+          9992.8
+        ],
+        [
+          9998.4,
+          507.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-10000-50000-60000-ab",
+      "points": [
+        [
+          10001.6,
+          50010.4
+        ],
+        [
+          10001.6,
+          59992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-10000-50000-60000-ba",
+      "points": [
+        [
+          9998.4,
+          59992.8
+        ],
+        [
+          9998.4,
+          50010.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-10000-60000-70000-ab",
+      "points": [
+        [
+          10001.6,
+          60007.2
+        ],
+        [
+          10001.6,
+          69992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-10000-60000-70000-ba",
+      "points": [
+        [
+          9998.4,
+          69992.8
+        ],
+        [
+          9998.4,
+          60007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-10000-70000-80000-ab",
+      "points": [
+        [
+          10001.6,
+          70007.2
+        ],
+        [
+          10001.6,
+          79992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-10000-70000-80000-ba",
+      "points": [
+        [
+          9998.4,
+          79992.8
+        ],
+        [
+          9998.4,
+          70007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-10000-80000-90000-ab",
+      "points": [
+        [
+          10001.6,
+          80007.2
+        ],
+        [
+          10001.6,
+          89992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-10000-80000-90000-ba",
+      "points": [
+        [
+          9998.4,
+          89992.8
+        ],
+        [
+          9998.4,
+          80007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-10000-90000-99500-ab",
+      "points": [
+        [
+          10001.6,
+          90007.2
+        ],
+        [
+          10001.6,
+          99492.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-10000-90000-99500-ba",
+      "points": [
+        [
+          9998.4,
+          99492.8
+        ],
+        [
+          9998.4,
+          90007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-20000-10000-20000-ab",
+      "points": [
+        [
+          20001.6,
+          10007.2
+        ],
+        [
+          20001.6,
+          19992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-20000-10000-20000-ba",
+      "points": [
+        [
+          19998.4,
+          19992.8
+        ],
+        [
+          19998.4,
+          10007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-20000-20000-30000-ab",
+      "points": [
+        [
+          20001.6,
+          20007.2
+        ],
+        [
+          20001.6,
+          29992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-20000-20000-30000-ba",
+      "points": [
+        [
+          19998.4,
+          29992.8
+        ],
+        [
+          19998.4,
+          20007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-20000-30000-40000-ab",
+      "points": [
+        [
+          20001.6,
+          30007.2
+        ],
+        [
+          20001.6,
+          39992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-20000-30000-40000-ba",
+      "points": [
+        [
+          19998.4,
+          39992.8
+        ],
+        [
+          19998.4,
+          30007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-20000-40000-50000-ab",
+      "points": [
+        [
+          20001.6,
+          40007.2
+        ],
+        [
+          20001.6,
+          49989.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-20000-40000-50000-ba",
+      "points": [
+        [
+          19998.4,
+          49989.6
+        ],
+        [
+          19998.4,
+          40007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-20000-500-10000-ab",
+      "points": [
+        [
+          20001.6,
+          507.2
+        ],
+        [
+          20001.6,
+          9992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-20000-500-10000-ba",
+      "points": [
+        [
+          19998.4,
+          9992.8
+        ],
+        [
+          19998.4,
+          507.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-20000-50000-60000-ab",
+      "points": [
+        [
+          20001.6,
+          50010.4
+        ],
+        [
+          20001.6,
+          59992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-20000-50000-60000-ba",
+      "points": [
+        [
+          19998.4,
+          59992.8
+        ],
+        [
+          19998.4,
+          50010.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-20000-60000-70000-ab",
+      "points": [
+        [
+          20001.6,
+          60007.2
+        ],
+        [
+          20001.6,
+          69992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-20000-60000-70000-ba",
+      "points": [
+        [
+          19998.4,
+          69992.8
+        ],
+        [
+          19998.4,
+          60007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-20000-70000-80000-ab",
+      "points": [
+        [
+          20001.6,
+          70007.2
+        ],
+        [
+          20001.6,
+          79992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-20000-70000-80000-ba",
+      "points": [
+        [
+          19998.4,
+          79992.8
+        ],
+        [
+          19998.4,
+          70007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-20000-80000-90000-ab",
+      "points": [
+        [
+          20001.6,
+          80007.2
+        ],
+        [
+          20001.6,
+          89992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-20000-80000-90000-ba",
+      "points": [
+        [
+          19998.4,
+          89992.8
+        ],
+        [
+          19998.4,
+          80007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-20000-90000-99500-ab",
+      "points": [
+        [
+          20001.6,
+          90007.2
+        ],
+        [
+          20001.6,
+          99492.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-20000-90000-99500-ba",
+      "points": [
+        [
+          19998.4,
+          99492.8
+        ],
+        [
+          19998.4,
+          90007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-30000-10000-20000-ab",
+      "points": [
+        [
+          30001.6,
+          10007.2
+        ],
+        [
+          30001.6,
+          19992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-30000-10000-20000-ba",
+      "points": [
+        [
+          29998.4,
+          19992.8
+        ],
+        [
+          29998.4,
+          10007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-30000-20000-30000-ab",
+      "points": [
+        [
+          30001.6,
+          20007.2
+        ],
+        [
+          30001.6,
+          29992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-30000-20000-30000-ba",
+      "points": [
+        [
+          29998.4,
+          29992.8
+        ],
+        [
+          29998.4,
+          20007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-30000-30000-40000-ab",
+      "points": [
+        [
+          30001.6,
+          30007.2
+        ],
+        [
+          30001.6,
+          39992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-30000-30000-40000-ba",
+      "points": [
+        [
+          29998.4,
+          39992.8
+        ],
+        [
+          29998.4,
+          30007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-30000-40000-50000-ab",
+      "points": [
+        [
+          30001.6,
+          40007.2
+        ],
+        [
+          30001.6,
+          49989.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-30000-40000-50000-ba",
+      "points": [
+        [
+          29998.4,
+          49989.6
+        ],
+        [
+          29998.4,
+          40007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-30000-500-10000-ab",
+      "points": [
+        [
+          30001.6,
+          507.2
+        ],
+        [
+          30001.6,
+          9992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-30000-500-10000-ba",
+      "points": [
+        [
+          29998.4,
+          9992.8
+        ],
+        [
+          29998.4,
+          507.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-30000-50000-60000-ab",
+      "points": [
+        [
+          30001.6,
+          50010.4
+        ],
+        [
+          30001.6,
+          59992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-30000-50000-60000-ba",
+      "points": [
+        [
+          29998.4,
+          59992.8
+        ],
+        [
+          29998.4,
+          50010.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-30000-60000-70000-ab",
+      "points": [
+        [
+          30001.6,
+          60007.2
+        ],
+        [
+          30001.6,
+          69992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-30000-60000-70000-ba",
+      "points": [
+        [
+          29998.4,
+          69992.8
+        ],
+        [
+          29998.4,
+          60007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-30000-70000-80000-ab",
+      "points": [
+        [
+          30001.6,
+          70007.2
+        ],
+        [
+          30001.6,
+          79992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-30000-70000-80000-ba",
+      "points": [
+        [
+          29998.4,
+          79992.8
+        ],
+        [
+          29998.4,
+          70007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-30000-80000-90000-ab",
+      "points": [
+        [
+          30001.6,
+          80007.2
+        ],
+        [
+          30001.6,
+          89992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-30000-80000-90000-ba",
+      "points": [
+        [
+          29998.4,
+          89992.8
+        ],
+        [
+          29998.4,
+          80007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-30000-90000-99500-ab",
+      "points": [
+        [
+          30001.6,
+          90007.2
+        ],
+        [
+          30001.6,
+          99492.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-30000-90000-99500-ba",
+      "points": [
+        [
+          29998.4,
+          99492.8
+        ],
+        [
+          29998.4,
+          90007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-40000-10000-20000-ab",
+      "points": [
+        [
+          40001.6,
+          10007.2
+        ],
+        [
+          40001.6,
+          19992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-40000-10000-20000-ba",
+      "points": [
+        [
+          39998.4,
+          19992.8
+        ],
+        [
+          39998.4,
+          10007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-40000-20000-30000-ab",
+      "points": [
+        [
+          40001.6,
+          20007.2
+        ],
+        [
+          40001.6,
+          29992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-40000-20000-30000-ba",
+      "points": [
+        [
+          39998.4,
+          29992.8
+        ],
+        [
+          39998.4,
+          20007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-40000-30000-40000-ab",
+      "points": [
+        [
+          40001.6,
+          30007.2
+        ],
+        [
+          40001.6,
+          39989.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-40000-30000-40000-ba",
+      "points": [
+        [
+          39998.4,
+          39989.6
+        ],
+        [
+          39998.4,
+          30007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-40000-40000-50000-ab",
+      "points": [
+        [
+          40001.6,
+          40010.4
+        ],
+        [
+          40001.6,
+          49989.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-40000-40000-50000-ba",
+      "points": [
+        [
+          39998.4,
+          49989.6
+        ],
+        [
+          39998.4,
+          40010.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-40000-500-10000-ab",
+      "points": [
+        [
+          40001.6,
+          503.2
+        ],
+        [
+          40001.6,
+          9992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-40000-500-10000-ba",
+      "points": [
+        [
+          39998.4,
+          9992.8
+        ],
+        [
+          39998.4,
+          503.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-40000-50000-60000-ab",
+      "points": [
+        [
+          40001.6,
+          50010.4
+        ],
+        [
+          40001.6,
+          59989.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-40000-50000-60000-ba",
+      "points": [
+        [
+          39998.4,
+          59989.6
+        ],
+        [
+          39998.4,
+          50010.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-40000-60000-70000-ab",
+      "points": [
+        [
+          40001.6,
+          60010.4
+        ],
+        [
+          40001.6,
+          69992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-40000-60000-70000-ba",
+      "points": [
+        [
+          39998.4,
+          69992.8
+        ],
+        [
+          39998.4,
+          60010.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-40000-70000-80000-ab",
+      "points": [
+        [
+          40001.6,
+          70007.2
+        ],
+        [
+          40001.6,
+          79992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-40000-70000-80000-ba",
+      "points": [
+        [
+          39998.4,
+          79992.8
+        ],
+        [
+          39998.4,
+          70007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-40000-80000-90000-ab",
+      "points": [
+        [
+          40001.6,
+          80007.2
+        ],
+        [
+          40001.6,
+          89992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-40000-80000-90000-ba",
+      "points": [
+        [
+          39998.4,
+          89992.8
+        ],
+        [
+          39998.4,
+          80007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-40000-90000-99500-ab",
+      "points": [
+        [
+          40001.6,
+          90007.2
+        ],
+        [
+          40001.6,
+          99496.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-40000-90000-99500-ba",
+      "points": [
+        [
+          39998.4,
+          99496.8
+        ],
+        [
+          39998.4,
+          90007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-500-10000-20000-ab",
+      "points": [
+        [
+          501.6,
+          10007.2
+        ],
+        [
+          501.6,
+          19992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-500-10000-20000-ba",
+      "points": [
+        [
+          498.4,
+          19992.8
+        ],
+        [
+          498.4,
+          10007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-500-20000-30000-ab",
+      "points": [
+        [
+          501.6,
+          20007.2
+        ],
+        [
+          501.6,
+          29992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-500-20000-30000-ba",
+      "points": [
+        [
+          498.4,
+          29992.8
+        ],
+        [
+          498.4,
+          20007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-500-30000-40000-ab",
+      "points": [
+        [
+          501.6,
+          30007.2
+        ],
+        [
+          501.6,
+          39992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-500-30000-40000-ba",
+      "points": [
+        [
+          498.4,
+          39992.8
+        ],
+        [
+          498.4,
+          30007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-500-40000-50000-ab",
+      "points": [
+        [
+          501.6,
+          40007.2
+        ],
+        [
+          501.6,
+          49989.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-500-40000-50000-ba",
+      "points": [
+        [
+          498.4,
+          49989.6
+        ],
+        [
+          498.4,
+          40007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-500-500-10000-ab",
+      "points": [
+        [
+          501.6,
+          503.2
+        ],
+        [
+          501.6,
+          9992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-500-500-10000-ba",
+      "points": [
+        [
+          498.4,
+          9992.8
+        ],
+        [
+          498.4,
+          503.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-500-50000-60000-ab",
+      "points": [
+        [
+          501.6,
+          50010.4
+        ],
+        [
+          501.6,
+          59992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-500-50000-60000-ba",
+      "points": [
+        [
+          498.4,
+          59992.8
+        ],
+        [
+          498.4,
+          50010.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-500-60000-70000-ab",
+      "points": [
+        [
+          501.6,
+          60007.2
+        ],
+        [
+          501.6,
+          69992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-500-60000-70000-ba",
+      "points": [
+        [
+          498.4,
+          69992.8
+        ],
+        [
+          498.4,
+          60007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-500-70000-80000-ab",
+      "points": [
+        [
+          501.6,
+          70007.2
+        ],
+        [
+          501.6,
+          79992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-500-70000-80000-ba",
+      "points": [
+        [
+          498.4,
+          79992.8
+        ],
+        [
+          498.4,
+          70007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-500-80000-90000-ab",
+      "points": [
+        [
+          501.6,
+          80007.2
+        ],
+        [
+          501.6,
+          89992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-500-80000-90000-ba",
+      "points": [
+        [
+          498.4,
+          89992.8
+        ],
+        [
+          498.4,
+          80007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-500-90000-99500-ab",
+      "points": [
+        [
+          501.6,
+          90007.2
+        ],
+        [
+          501.6,
+          99496.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-500-90000-99500-ba",
+      "points": [
+        [
+          498.4,
+          99496.8
+        ],
+        [
+          498.4,
+          90007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-60000-10000-20000-ab",
+      "points": [
+        [
+          60001.6,
+          10007.2
+        ],
+        [
+          60001.6,
+          19992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-60000-10000-20000-ba",
+      "points": [
+        [
+          59998.4,
+          19992.8
+        ],
+        [
+          59998.4,
+          10007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-60000-20000-30000-ab",
+      "points": [
+        [
+          60001.6,
+          20007.2
+        ],
+        [
+          60001.6,
+          29992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-60000-20000-30000-ba",
+      "points": [
+        [
+          59998.4,
+          29992.8
+        ],
+        [
+          59998.4,
+          20007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-60000-30000-40000-ab",
+      "points": [
+        [
+          60001.6,
+          30007.2
+        ],
+        [
+          60001.6,
+          39989.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-60000-30000-40000-ba",
+      "points": [
+        [
+          59998.4,
+          39989.6
+        ],
+        [
+          59998.4,
+          30007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-60000-40000-50000-ab",
+      "points": [
+        [
+          60001.6,
+          40010.4
+        ],
+        [
+          60001.6,
+          49989.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-60000-40000-50000-ba",
+      "points": [
+        [
+          59998.4,
+          49989.6
+        ],
+        [
+          59998.4,
+          40010.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-60000-500-10000-ab",
+      "points": [
+        [
+          60001.6,
+          503.2
+        ],
+        [
+          60001.6,
+          9992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-60000-500-10000-ba",
+      "points": [
+        [
+          59998.4,
+          9992.8
+        ],
+        [
+          59998.4,
+          503.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-60000-50000-60000-ab",
+      "points": [
+        [
+          60001.6,
+          50010.4
+        ],
+        [
+          60001.6,
+          59989.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-60000-50000-60000-ba",
+      "points": [
+        [
+          59998.4,
+          59989.6
+        ],
+        [
+          59998.4,
+          50010.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-60000-60000-70000-ab",
+      "points": [
+        [
+          60001.6,
+          60010.4
+        ],
+        [
+          60001.6,
+          69992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-60000-60000-70000-ba",
+      "points": [
+        [
+          59998.4,
+          69992.8
+        ],
+        [
+          59998.4,
+          60010.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-60000-70000-80000-ab",
+      "points": [
+        [
+          60001.6,
+          70007.2
+        ],
+        [
+          60001.6,
+          79992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-60000-70000-80000-ba",
+      "points": [
+        [
+          59998.4,
+          79992.8
+        ],
+        [
+          59998.4,
+          70007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-60000-80000-90000-ab",
+      "points": [
+        [
+          60001.6,
+          80007.2
+        ],
+        [
+          60001.6,
+          89992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-60000-80000-90000-ba",
+      "points": [
+        [
+          59998.4,
+          89992.8
+        ],
+        [
+          59998.4,
+          80007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-60000-90000-99500-ab",
+      "points": [
+        [
+          60001.6,
+          90007.2
+        ],
+        [
+          60001.6,
+          99496.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-60000-90000-99500-ba",
+      "points": [
+        [
+          59998.4,
+          99496.8
+        ],
+        [
+          59998.4,
+          90007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-70000-10000-20000-ab",
+      "points": [
+        [
+          70001.6,
+          10007.2
+        ],
+        [
+          70001.6,
+          19992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-70000-10000-20000-ba",
+      "points": [
+        [
+          69998.4,
+          19992.8
+        ],
+        [
+          69998.4,
+          10007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-70000-20000-30000-ab",
+      "points": [
+        [
+          70001.6,
+          20007.2
+        ],
+        [
+          70001.6,
+          29992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-70000-20000-30000-ba",
+      "points": [
+        [
+          69998.4,
+          29992.8
+        ],
+        [
+          69998.4,
+          20007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-70000-30000-40000-ab",
+      "points": [
+        [
+          70001.6,
+          30007.2
+        ],
+        [
+          70001.6,
+          39992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-70000-30000-40000-ba",
+      "points": [
+        [
+          69998.4,
+          39992.8
+        ],
+        [
+          69998.4,
+          30007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-70000-40000-50000-ab",
+      "points": [
+        [
+          70001.6,
+          40007.2
+        ],
+        [
+          70001.6,
+          49989.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-70000-40000-50000-ba",
+      "points": [
+        [
+          69998.4,
+          49989.6
+        ],
+        [
+          69998.4,
+          40007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-70000-500-10000-ab",
+      "points": [
+        [
+          70001.6,
+          507.2
+        ],
+        [
+          70001.6,
+          9992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-70000-500-10000-ba",
+      "points": [
+        [
+          69998.4,
+          9992.8
+        ],
+        [
+          69998.4,
+          507.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-70000-50000-60000-ab",
+      "points": [
+        [
+          70001.6,
+          50010.4
+        ],
+        [
+          70001.6,
+          59992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-70000-50000-60000-ba",
+      "points": [
+        [
+          69998.4,
+          59992.8
+        ],
+        [
+          69998.4,
+          50010.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-70000-60000-70000-ab",
+      "points": [
+        [
+          70001.6,
+          60007.2
+        ],
+        [
+          70001.6,
+          69992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-70000-60000-70000-ba",
+      "points": [
+        [
+          69998.4,
+          69992.8
+        ],
+        [
+          69998.4,
+          60007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-70000-70000-80000-ab",
+      "points": [
+        [
+          70001.6,
+          70007.2
+        ],
+        [
+          70001.6,
+          79992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-70000-70000-80000-ba",
+      "points": [
+        [
+          69998.4,
+          79992.8
+        ],
+        [
+          69998.4,
+          70007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-70000-80000-90000-ab",
+      "points": [
+        [
+          70001.6,
+          80007.2
+        ],
+        [
+          70001.6,
+          89992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-70000-80000-90000-ba",
+      "points": [
+        [
+          69998.4,
+          89992.8
+        ],
+        [
+          69998.4,
+          80007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-70000-90000-99500-ab",
+      "points": [
+        [
+          70001.6,
+          90007.2
+        ],
+        [
+          70001.6,
+          99492.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-70000-90000-99500-ba",
+      "points": [
+        [
+          69998.4,
+          99492.8
+        ],
+        [
+          69998.4,
+          90007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-80000-10000-20000-ab",
+      "points": [
+        [
+          80001.6,
+          10007.2
+        ],
+        [
+          80001.6,
+          19992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-80000-10000-20000-ba",
+      "points": [
+        [
+          79998.4,
+          19992.8
+        ],
+        [
+          79998.4,
+          10007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-80000-20000-30000-ab",
+      "points": [
+        [
+          80001.6,
+          20007.2
+        ],
+        [
+          80001.6,
+          29992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-80000-20000-30000-ba",
+      "points": [
+        [
+          79998.4,
+          29992.8
+        ],
+        [
+          79998.4,
+          20007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-80000-30000-40000-ab",
+      "points": [
+        [
+          80001.6,
+          30007.2
+        ],
+        [
+          80001.6,
+          39992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-80000-30000-40000-ba",
+      "points": [
+        [
+          79998.4,
+          39992.8
+        ],
+        [
+          79998.4,
+          30007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-80000-40000-50000-ab",
+      "points": [
+        [
+          80001.6,
+          40007.2
+        ],
+        [
+          80001.6,
+          49989.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-80000-40000-50000-ba",
+      "points": [
+        [
+          79998.4,
+          49989.6
+        ],
+        [
+          79998.4,
+          40007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-80000-500-10000-ab",
+      "points": [
+        [
+          80001.6,
+          507.2
+        ],
+        [
+          80001.6,
+          9992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-80000-500-10000-ba",
+      "points": [
+        [
+          79998.4,
+          9992.8
+        ],
+        [
+          79998.4,
+          507.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-80000-50000-60000-ab",
+      "points": [
+        [
+          80001.6,
+          50010.4
+        ],
+        [
+          80001.6,
+          59992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-80000-50000-60000-ba",
+      "points": [
+        [
+          79998.4,
+          59992.8
+        ],
+        [
+          79998.4,
+          50010.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-80000-60000-70000-ab",
+      "points": [
+        [
+          80001.6,
+          60007.2
+        ],
+        [
+          80001.6,
+          69992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-80000-60000-70000-ba",
+      "points": [
+        [
+          79998.4,
+          69992.8
+        ],
+        [
+          79998.4,
+          60007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-80000-70000-80000-ab",
+      "points": [
+        [
+          80001.6,
+          70007.2
+        ],
+        [
+          80001.6,
+          79992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-80000-70000-80000-ba",
+      "points": [
+        [
+          79998.4,
+          79992.8
+        ],
+        [
+          79998.4,
+          70007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-80000-80000-90000-ab",
+      "points": [
+        [
+          80001.6,
+          80007.2
+        ],
+        [
+          80001.6,
+          89992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-80000-80000-90000-ba",
+      "points": [
+        [
+          79998.4,
+          89992.8
+        ],
+        [
+          79998.4,
+          80007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-80000-90000-99500-ab",
+      "points": [
+        [
+          80001.6,
+          90007.2
+        ],
+        [
+          80001.6,
+          99492.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-80000-90000-99500-ba",
+      "points": [
+        [
+          79998.4,
+          99492.8
+        ],
+        [
+          79998.4,
+          90007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-90000-10000-20000-ab",
+      "points": [
+        [
+          90001.6,
+          10007.2
+        ],
+        [
+          90001.6,
+          19992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-90000-10000-20000-ba",
+      "points": [
+        [
+          89998.4,
+          19992.8
+        ],
+        [
+          89998.4,
+          10007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-90000-20000-30000-ab",
+      "points": [
+        [
+          90001.6,
+          20007.2
+        ],
+        [
+          90001.6,
+          29992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-90000-20000-30000-ba",
+      "points": [
+        [
+          89998.4,
+          29992.8
+        ],
+        [
+          89998.4,
+          20007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-90000-30000-40000-ab",
+      "points": [
+        [
+          90001.6,
+          30007.2
+        ],
+        [
+          90001.6,
+          39992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-90000-30000-40000-ba",
+      "points": [
+        [
+          89998.4,
+          39992.8
+        ],
+        [
+          89998.4,
+          30007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-90000-40000-50000-ab",
+      "points": [
+        [
+          90001.6,
+          40007.2
+        ],
+        [
+          90001.6,
+          49989.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-90000-40000-50000-ba",
+      "points": [
+        [
+          89998.4,
+          49989.6
+        ],
+        [
+          89998.4,
+          40007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-90000-500-10000-ab",
+      "points": [
+        [
+          90001.6,
+          507.2
+        ],
+        [
+          90001.6,
+          9992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-90000-500-10000-ba",
+      "points": [
+        [
+          89998.4,
+          9992.8
+        ],
+        [
+          89998.4,
+          507.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-90000-50000-60000-ab",
+      "points": [
+        [
+          90001.6,
+          50010.4
+        ],
+        [
+          90001.6,
+          59992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-90000-50000-60000-ba",
+      "points": [
+        [
+          89998.4,
+          59992.8
+        ],
+        [
+          89998.4,
+          50010.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-90000-60000-70000-ab",
+      "points": [
+        [
+          90001.6,
+          60007.2
+        ],
+        [
+          90001.6,
+          69992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-90000-60000-70000-ba",
+      "points": [
+        [
+          89998.4,
+          69992.8
+        ],
+        [
+          89998.4,
+          60007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-90000-70000-80000-ab",
+      "points": [
+        [
+          90001.6,
+          70007.2
+        ],
+        [
+          90001.6,
+          79992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-90000-70000-80000-ba",
+      "points": [
+        [
+          89998.4,
+          79992.8
+        ],
+        [
+          89998.4,
+          70007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-90000-80000-90000-ab",
+      "points": [
+        [
+          90001.6,
+          80007.2
+        ],
+        [
+          90001.6,
+          89992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-90000-80000-90000-ba",
+      "points": [
+        [
+          89998.4,
+          89992.8
+        ],
+        [
+          89998.4,
+          80007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-90000-90000-99500-ab",
+      "points": [
+        [
+          90001.6,
+          90009.46
+        ],
+        [
+          90001.6,
+          99492.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-90000-90000-99500-ba",
+      "points": [
+        [
+          89998.4,
+          99492.8
+        ],
+        [
+          89998.4,
+          90009.46
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-99500-10000-20000-ab",
+      "points": [
+        [
+          99501.6,
+          10007.2
+        ],
+        [
+          99501.6,
+          19992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-99500-10000-20000-ba",
+      "points": [
+        [
+          99498.4,
+          19992.8
+        ],
+        [
+          99498.4,
+          10007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-99500-20000-30000-ab",
+      "points": [
+        [
+          99501.6,
+          20007.2
+        ],
+        [
+          99501.6,
+          29992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-99500-20000-30000-ba",
+      "points": [
+        [
+          99498.4,
+          29992.8
+        ],
+        [
+          99498.4,
+          20007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-99500-30000-40000-ab",
+      "points": [
+        [
+          99501.6,
+          30007.2
+        ],
+        [
+          99501.6,
+          39992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-99500-30000-40000-ba",
+      "points": [
+        [
+          99498.4,
+          39992.8
+        ],
+        [
+          99498.4,
+          30007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-99500-40000-50000-ab",
+      "points": [
+        [
+          99501.6,
+          40007.2
+        ],
+        [
+          99501.6,
+          49989.6
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-99500-40000-50000-ba",
+      "points": [
+        [
+          99498.4,
+          49989.6
+        ],
+        [
+          99498.4,
+          40007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-99500-500-10000-ab",
+      "points": [
+        [
+          99501.6,
+          503.2
+        ],
+        [
+          99501.6,
+          9992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-99500-500-10000-ba",
+      "points": [
+        [
+          99498.4,
+          9992.8
+        ],
+        [
+          99498.4,
+          503.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-99500-50000-60000-ab",
+      "points": [
+        [
+          99501.6,
+          50010.4
+        ],
+        [
+          99501.6,
+          59992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-99500-50000-60000-ba",
+      "points": [
+        [
+          99498.4,
+          59992.8
+        ],
+        [
+          99498.4,
+          50010.4
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-99500-60000-70000-ab",
+      "points": [
+        [
+          99501.6,
+          60007.2
+        ],
+        [
+          99501.6,
+          69992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-99500-60000-70000-ba",
+      "points": [
+        [
+          99498.4,
+          69992.8
+        ],
+        [
+          99498.4,
+          60007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-99500-70000-80000-ab",
+      "points": [
+        [
+          99501.6,
+          70007.2
+        ],
+        [
+          99501.6,
+          79992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-99500-70000-80000-ba",
+      "points": [
+        [
+          99498.4,
+          79992.8
+        ],
+        [
+          99498.4,
+          70007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-99500-80000-90000-ab",
+      "points": [
+        [
+          99501.6,
+          80007.2
+        ],
+        [
+          99501.6,
+          89992.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-99500-80000-90000-ba",
+      "points": [
+        [
+          99498.4,
+          89992.8
+        ],
+        [
+          99498.4,
+          80007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-99500-90000-99500-ab",
+      "points": [
+        [
+          99501.6,
+          90007.2
+        ],
+        [
+          99501.6,
+          99496.8
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    },
+    {
+      "allowed_vehicle_classes": [
+        "passenger",
+        "delivery"
+      ],
+      "edge_id": "v-99500-90000-99500-ba",
+      "points": [
+        [
+          99498.4,
+          99496.8
+        ],
+        [
+          99498.4,
+          90007.2
+        ]
+      ],
+      "road_class": "collector",
+      "synthetic": true
+    }
+  ],
+  "scenario_id": "synthetic_multiterrain_100k",
+  "scenario_version": 1001,
+  "task_locations": [
+    {
+      "position_m": {
+        "x_m": 65000.0,
+        "y_m": 50000.0
+      },
+      "synthetic": true,
+      "task_id": "synt-v1-install-1",
+      "well_id": "well-1"
+    },
+    {
+      "position_m": {
+        "x_m": 65081.15882352941,
+        "y_m": 50000.0
+      },
+      "synthetic": true,
+      "task_id": "synt-v1-install-2",
+      "well_id": "well-2"
+    }
+  ],
+  "terrain": {
+    "grid": {
+      "elevation_m": [
+        [
+          18.735,
+          19.959,
+          20.476,
+          19.697,
+          18.729,
+          21.481,
+          24.841,
+          35.308,
+          48.82,
+          72.189,
+          105.235,
+          138.645,
+          183.94,
+          234.701,
+          289.21,
+          355.011,
+          422.816,
+          499.6,
+          583.649,
+          673.01,
+          770.802
+        ],
+        [
+          21.885,
+          18.751,
+          20.789,
+          18.636,
+          21.382,
+          18.532,
+          22.599,
+          33.867,
+          51.065,
+          73.178,
+          103.543,
+          138.752,
+          185.159,
+          231.653,
+          288.579,
+          353.783,
+          424.08,
+          498.237,
+          582.364,
+          674.617,
+          771.491
+        ],
+        [
+          21.817,
+          20.463,
+          20.623,
+          20.735,
+          20.767,
+          20.93,
+          24.365,
+          33.3,
+          51.634,
+          73.131,
+          102.07,
+          138.992,
+          184.688,
+          231.514,
+          291.841,
+          351.801,
+          422.945,
+          498.272,
+          581.775,
+          672.111,
+          769.191
+        ],
+        [
+          21.142,
+          19.927,
+          19.438,
+          20.407,
+          20.625,
+          21.052,
+          24.806,
+          32.341,
+          49.069,
+          73.34,
+          103.758,
+          141.822,
+          181.982,
+          234.733,
+          289.332,
+          351.469,
+          424.072,
+          500.98,
+          584.553,
+          672.488,
+          769.477
+        ],
+        [
+          20.593,
+          19.493,
+          20.908,
+          21.385,
+          18.333,
+          19.422,
+          24.858,
+          34.921,
+          48.816,
+          71.549,
+          103.23,
+          141.862,
+          181.407,
+          234.756,
+          288.278,
+          353.548,
+          425.09,
+          501.152,
+          585.107,
+          673.621,
+          768.658
+        ],
+        [
+          21.758,
+          19.548,
+          21.839,
+          19.401,
+          19.484,
+          20.733,
+          25.302,
+          32.283,
+          48.895,
+          73.535,
+          102.303,
+          140.52,
+          182.334,
+          233.305,
+          291.016,
+          355.283,
+          423.372,
+          500.213,
+          583.124,
+          673.788,
+          769.281
+        ],
+        [
+          20.192,
+          20.475,
+          21.176,
+          21.415,
+          20.523,
+          20.815,
+          24.819,
+          31.709,
+          50.544,
+          74.003,
+          102.607,
+          138.84,
+          185.034,
+          231.85,
+          291.473,
+          353.661,
+          422.956,
+          500.757,
+          583.763,
+          672.754,
+          769.19
+        ],
+        [
+          21.413,
+          21.319,
+          19.746,
+          19.713,
+          19.371,
+          19.935,
+          24.63,
+          34.927,
+          51.24,
+          71.946,
+          104.298,
+          139.962,
+          183.478,
+          235.367,
+          289.452,
+          352.757,
+          425.395,
+          501.052,
+          583.24,
+          673.527,
+          768.684
+        ],
+        [
+          18.058,
+          18.478,
+          21.615,
+          21.179,
+          18.444,
+          18.87,
+          21.666,
+          35.021,
+          48.55,
+          73.429,
+          103.307,
+          141.211,
+          181.995,
+          235.454,
+          291.054,
+          353.314,
+          423.631,
+          502.301,
+          585.785,
+          675.398,
+          769.292
+        ],
+        [
+          18.133,
+          18.718,
+          20.009,
+          18.867,
+          18.422,
+          18.681,
+          23.287,
+          31.419,
+          49.61,
+          74.821,
+          103.622,
+          138.99,
+          184.865,
+          235.757,
+          292.554,
+          356.581,
+          425.693,
+          501.55,
+          584.874,
+          675.253,
+          771.09
+        ],
+        [
+          19.666,
+          18.022,
+          20.495,
+          19.272,
+          20.959,
+          20.589,
+          24.853,
+          33.121,
+          48.746,
+          74.581,
+          103.048,
+          141.002,
+          182.974,
+          236.428,
+          291.6,
+          356.176,
+          429.345,
+          507.861,
+          587.333,
+          678.461,
+          770.834
+        ],
+        [
+          20.77,
+          20.924,
+          21.755,
+          20.047,
+          21.451,
+          20.364,
+          24.704,
+          32.836,
+          51.866,
+          74.739,
+          103.743,
+          138.829,
+          184.51,
+          236.712,
+          296.527,
+          362.564,
+          436.463,
+          513.006,
+          596.365,
+          682.91,
+          775.858
+        ],
+        [
+          21.46,
+          18.928,
+          18.233,
+          19.426,
+          20.35,
+          19.476,
+          23.106,
+          31.864,
+          48.953,
+          71.626,
+          103.407,
+          139.663,
+          186.14,
+          242.714,
+          304.691,
+          375.243,
+          453.854,
+          530.999,
+          612.221,
+          696.545,
+          786.11
+        ],
+        [
+          18.514,
+          20.154,
+          19.315,
+          21.147,
+          21.658,
+          18.212,
+          22.082,
+          32.929,
+          50.263,
+          73.952,
+          105.05,
+          141.624,
+          191.395,
+          249.378,
+          317.715,
+          393.709,
+          476.898,
+          558.494,
+          634.527,
+          715.397,
+          797.789
+        ],
+        [
+          18.863,
+          21.509,
+          19.624,
+          21.608,
+          18.871,
+          20.032,
+          22.896,
+          31.76,
+          51.619,
+          73.649,
+          105.941,
+          143.232,
+          194.503,
+          256.79,
+          329.618,
+          413.734,
+          503.331,
+          585.978,
+          662.837,
+          733.535,
+          812.321
+        ],
+        [
+          19.718,
+          18.356,
+          21.743,
+          20.409,
+          21.699,
+          18.385,
+          21.878,
+          31.435,
+          49.466,
+          74.885,
+          105.842,
+          146.279,
+          196.173,
+          262.383,
+          343.466,
+          430.553,
+          525.817,
+          610.214,
+          684.689,
+          753.534,
+          823.928
+        ],
+        [
+          20.366,
+          21.821,
+          18.919,
+          19.582,
+          19.593,
+          21.626,
+          23.718,
+          32.142,
+          49.242,
+          75.288,
+          106.327,
+          146.286,
+          198.914,
+          265.984,
+          346.729,
+          437.704,
+          534.598,
+          621.475,
+          695.601,
+          759.214,
+          828.495
+        ],
+        [
+          21.082,
+          18.87,
+          18.861,
+          19.81,
+          18.409,
+          20.314,
+          21.805,
+          34.516,
+          50.588,
+          75.754,
+          103.828,
+          147.2,
+          198.857,
+          262.441,
+          343.089,
+          431.886,
+          526.487,
+          609.464,
+          685.813,
+          751.916,
+          823.213
+        ],
+        [
+          21.82,
+          21.966,
+          18.077,
+          18.62,
+          19.033,
+          19.619,
+          22.078,
+          34.223,
+          50.974,
+          73.911,
+          106.095,
+          142.857,
+          193.615,
+          254.807,
+          329.826,
+          414.848,
+          504.342,
+          587.443,
+          661.711,
+          736.043,
+          809.839
+        ],
+        [
+          18.751,
+          21.525,
+          20.427,
+          21.885,
+          21.718,
+          18.447,
+          22.487,
+          33.57,
+          48.213,
+          74.692,
+          106.196,
+          143.591,
+          188.708,
+          248.806,
+          317.374,
+          395.357,
+          474.574,
+          555.093,
+          636.691,
+          715.775,
+          795.066
+        ],
+        [
+          19.564,
+          19.819,
+          18.785,
+          21.567,
+          18.022,
+          19.967,
+          22.412,
+          34.452,
+          50.032,
+          73.559,
+          105.004,
+          139.874,
+          186.314,
+          241.187,
+          306.418,
+          375.118,
+          452.967,
+          532.362,
+          611.933,
+          696.903,
+          784.715
+        ]
+      ],
+      "nx": 21,
+      "ny": 21,
+      "origin_m": [
+        0,
+        0
+      ],
+      "spacing_m": [
+        5000,
+        5000
+      ]
+    },
+    "regions": [
+      {
+        "id": "synt-v1-plain",
+        "kind": "plain",
+        "polygon_m": [
+          [
+            0,
+            0
+          ],
+          [
+            25000,
+            0
+          ],
+          [
+            25000,
+            100000
+          ],
+          [
+            0,
+            100000
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "synthetic": true
+      },
+      {
+        "id": "synt-v1-hillside",
+        "kind": "hillside",
+        "polygon_m": [
+          [
+            25000,
+            0
+          ],
+          [
+            65000,
+            0
+          ],
+          [
+            65000,
+            100000
+          ],
+          [
+            25000,
+            100000
+          ],
+          [
+            25000,
+            0
+          ]
+        ],
+        "synthetic": true
+      },
+      {
+        "id": "synt-v1-mountain",
+        "kind": "mountain",
+        "polygon_m": [
+          [
+            65000,
+            0
+          ],
+          [
+            100000,
+            0
+          ],
+          [
+            100000,
+            100000
+          ],
+          [
+            65000,
+            100000
+          ],
+          [
+            65000,
+            0
+          ]
+        ],
+        "synthetic": true
+      }
+    ],
+    "synthetic": true,
+    "visual_only": true
+  },
+  "vehicles": [
+    {
+      "position_m": {
+        "x_m": 39000,
+        "y_m": 50000
+      },
+      "synthetic": true,
+      "vehicle_id": "synt-v1-truck-1"
+    },
+    {
+      "position_m": {
+        "x_m": 39000,
+        "y_m": 50050
+      },
+      "synthetic": true,
+      "vehicle_id": "synt-v1-truck-2"
+    },
+    {
+      "position_m": {
+        "x_m": 30000,
+        "y_m": 40000
+      },
+      "synthetic": true,
+      "vehicle_id": "synt-v1-truck-3"
+    }
+  ],
+  "wells": [
+    {
+      "position_m": {
+        "x_m": 65000.0,
+        "y_m": 50000.0
+      },
+      "synthetic": true,
+      "well_id": "well-1"
+    },
+    {
+      "position_m": {
+        "x_m": 65081.15882352941,
+        "y_m": 50000.0
+      },
+      "synthetic": true,
+      "well_id": "well-2"
+    }
+  ]
+}

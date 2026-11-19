@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:borden100k:task-result:v1",
+  "type": "object",
+  "required": ["result_schema", "task_release", "task_id", "run_id", "scenario_id", "scenario_version", "seed", "mode", "status", "engine_result"],
+  "properties": {
+    "result_schema": {"const": "task-result-v1"},
+    "task_release": {"const": "1.0.0rc1"},
+    "task_id": {"type": "string"},
+    "run_id": {"type": "string", "format": "uuid"},
+    "scenario_id": {"type": "string"},
+    "scenario_version": {"const": 1001},
+    "seed": {"type": "integer"},
+    "scenario_generation_seed": {"type": "integer"},
+    "mode": {"const": "maintenance_smoke"},
+    "status": {"const": "succeeded"},
+    "engine_result": {"type": "object"},
+    "scientific_config_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "additionalProperties": false
+}

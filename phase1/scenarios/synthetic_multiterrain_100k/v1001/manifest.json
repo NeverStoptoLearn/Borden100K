@@ -1,0 +1,89 @@
+{
+  "manifest_version": "dual-scenes-v1",
+  "scenario_id": "synthetic_multiterrain_100k",
+  "scenario_version": 1001,
+  "title": "多地形合成场景",
+  "seed": 20261109,
+  "synthetic": true,
+  "coordinates": {
+    "coordinate_frame": "synthetic_local_m",
+    "projected_crs": null,
+    "extent_m": [
+      0,
+      0,
+      100000,
+      100000
+    ],
+    "anchor_wgs84": null
+  },
+  "availability": {
+    "normal": {
+      "allowed": true,
+      "blockers": []
+    },
+    "closure": {
+      "allowed": true,
+      "blockers": []
+    },
+    "no_pump": {
+      "allowed": true,
+      "blockers": []
+    }
+  },
+  "sources": [
+    {
+      "license": "project synthetic demonstration",
+      "reference": "Independent fixed-seed generated synthetic service dataset",
+      "source_id": "synthetic-multiterrain-v1",
+      "synthetic": true
+    },
+    {
+      "source_id": "synthetic-traffic-acceptance",
+      "reference": "Historical synthetic SUMO acceptance; Task Release validation is recorded separately in release evidence",
+      "license": "project synthetic validation",
+      "synthetic": true
+    },
+    {
+      "source_id": "model-defaults-v1",
+      "reference": "Original certified Borden3D synthetic uncalibrated scientific configuration; no field calibration",
+      "license": "project scientific input",
+      "synthetic": true
+    }
+  ],
+  "science": {
+    "code": {
+      "path": "borden3d_common.py",
+      "sha256": "6a1fcf8ddf67f61654b3c6dbe4b6c67258e6908b0d2d131a5f638ebfb0005275",
+      "media_type": "text/x-python"
+    },
+    "config": {
+      "path": "phase1/scenarios/synthetic_multiterrain_100k/v1001/hydro-config.json",
+      "sha256": "5774c92376b878f3a88841f8a36c204bf63e6334154b699e1ba572f8acc0ff48",
+      "media_type": "application/json"
+    },
+    "profile": "smoke",
+    "model_signature": "49841c8c1a7fbf66f4fe80e4380204d221d65206a8f3a5f5469b4d2e2d5a3191"
+  },
+  "assets": {
+    "network": {
+      "path": "phase1/traffic/scenarios/synthetic_multiterrain_100k/v1001/network.net.xml",
+      "sha256": "f3993eb2cbf1797c4b3d559e831ade28fbe214904594a8534a8f90b5980a3c76",
+      "media_type": "application/xml"
+    },
+    "scenario_template": {
+      "path": "phase1/scenarios/synthetic_multiterrain_100k/v1001/scenario.template.json",
+      "sha256": "977fe996831b85fabe53b105fb599cabed6fb05f7f95b4e782a8b8dc642b08c3",
+      "media_type": "application/json"
+    },
+    "parameters_template": {
+      "path": "phase1/scenarios/synthetic_multiterrain_100k/v1001/parameters.template.json",
+      "sha256": "8cd68e9bd8c64e8be72e5c4034696c31176e6e0d02d181ef59d3b19f71fb207d",
+      "media_type": "application/json"
+    },
+    "display": {
+      "path": "phase1/scenarios/synthetic_multiterrain_100k/v1001/display.layers.json",
+      "sha256": "805e43d8d2da29f07771a5d6cf8705a86eab2406134084183afac441eb6b8f8d",
+      "media_type": "application/json"
+    }
+  }
+}

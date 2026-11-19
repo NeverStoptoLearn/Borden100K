@@ -1,0 +1,73 @@
+{
+  "catalog_version": "dual-scenes-v1",
+  "scenes": [
+    {
+      "scenario_id": "borden_reference_100k",
+      "scenario_version": 1001,
+      "manifest": {
+        "path": "phase1/scenarios/borden_reference_100k/v1001/manifest.json",
+        "sha256": "8c03d6cb580defcb9e93be6224ad0441b1455ea37771ee2561faf7e2af20e0d0",
+        "media_type": "application/json"
+      },
+      "summary": {
+        "scenario_id": "borden_reference_100k",
+        "scenario_version": 1001,
+        "title": "Borden 参考场景",
+        "seed": 20261109,
+        "synthetic": false,
+        "availability": {
+          "normal": {
+            "allowed": false,
+            "blockers": [
+              "TARGET_ROAD_ACCEPTANCE_NOT_RUN"
+            ]
+          },
+          "closure": {
+            "allowed": false,
+            "blockers": [
+              "TARGET_ROAD_ACCEPTANCE_NOT_RUN"
+            ]
+          },
+          "no_pump": {
+            "allowed": true,
+            "blockers": []
+          }
+        },
+        "manifest_sha256": "8c03d6cb580defcb9e93be6224ad0441b1455ea37771ee2561faf7e2af20e0d0",
+        "coordinate_frame": "wgs84_projected"
+      }
+    },
+    {
+      "scenario_id": "synthetic_multiterrain_100k",
+      "scenario_version": 1001,
+      "manifest": {
+        "path": "phase1/scenarios/synthetic_multiterrain_100k/v1001/manifest.json",
+        "sha256": "856e23d20385b9715b7d93ac34dd093592741962fa7e2cf321a4076039441899",
+        "media_type": "application/json"
+      },
+      "summary": {
+        "scenario_id": "synthetic_multiterrain_100k",
+        "scenario_version": 1001,
+        "title": "多地形合成场景",
+        "seed": 20261109,
+        "synthetic": true,
+        "availability": {
+          "normal": {
+            "allowed": true,
+            "blockers": []
+          },
+          "closure": {
+            "allowed": true,
+            "blockers": []
+          },
+          "no_pump": {
+            "allowed": true,
+            "blockers": []
+          }
+        },
+        "manifest_sha256": "856e23d20385b9715b7d93ac34dd093592741962fa7e2cf321a4076039441899",
+        "coordinate_frame": "synthetic_local_m"
+      }
+    }
+  ]
+}

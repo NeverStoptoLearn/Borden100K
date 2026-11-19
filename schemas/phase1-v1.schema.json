@@ -1,0 +1,1653 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://borden100k.local/schemas/phase1-v1.schema.json",
+  "title": "Borden-100K Phase I contract 1.0.0",
+  "type": "object",
+  "properties": {
+    "contract_version": {
+      "const": "1.0.0"
+    },
+    "kind": {
+      "enum": [
+        "scenario",
+        "traffic_request",
+        "traffic_result",
+        "resource_result",
+        "hydro_request",
+        "hydro_result",
+        "run_status",
+        "resource_request",
+        "run_request"
+      ]
+    },
+    "experiment_id": {
+      "$ref": "#/$defs/id"
+    },
+    "run_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "scenario_id": {
+      "$ref": "#/$defs/id"
+    },
+    "scenario_version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "parameter_version": {
+      "$ref": "#/$defs/id"
+    },
+    "model_build": {
+      "$ref": "#/$defs/build"
+    },
+    "seed": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    "units": {
+      "$ref": "#/$defs/units"
+    },
+    "data_provenance": {
+      "$ref": "#/$defs/provenance"
+    },
+    "status": {
+      "enum": [
+        "queued",
+        "running",
+        "succeeded",
+        "failed",
+        "cancelled"
+      ]
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/artifact"
+      },
+      "minItems": 0
+    },
+    "error": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/error"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "payload": {}
+  },
+  "required": [
+    "contract_version",
+    "kind",
+    "experiment_id",
+    "run_id",
+    "scenario_id",
+    "scenario_version",
+    "parameter_version",
+    "model_build",
+    "seed",
+    "units",
+    "data_provenance",
+    "status",
+    "artifacts",
+    "error",
+    "payload"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,95}$"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "xy": {
+      "type": "object",
+      "properties": {
+        "x_m": {
+          "type": "number"
+        },
+        "y_m": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "x_m",
+        "y_m"
+      ],
+      "additionalProperties": false
+    },
+    "lonlat": {
+      "type": "object",
+      "properties": {
+        "lon": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        },
+        "lat": {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        }
+      },
+      "required": [
+        "lon",
+        "lat"
+      ],
+      "additionalProperties": false
+    },
+    "xyz": {
+      "type": "object",
+      "properties": {
+        "x_local_m": {
+          "type": "number"
+        },
+        "y_local_m": {
+          "type": "number"
+        },
+        "z_local_m": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "x_local_m",
+        "y_local_m",
+        "z_local_m"
+      ],
+      "additionalProperties": false
+    },
+    "path": {
+      "type": "string",
+      "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.?(?:/|$))[A-Za-z0-9][A-Za-z0-9_./-]*$"
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "source_id": {
+          "$ref": "#/$defs/id"
+        },
+        "reference": {
+          "type": "string",
+          "minLength": 1
+        },
+        "license": {
+          "type": "string",
+          "minLength": 1
+        },
+        "synthetic": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "source_id",
+        "reference",
+        "license",
+        "synthetic"
+      ],
+      "additionalProperties": false
+    },
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "classification": {
+          "enum": [
+            "synthetic",
+            "mixed",
+            "observed"
+          ]
+        },
+        "calibration": {
+          "enum": [
+            "none",
+            "synthetic_anchor",
+            "field_verified"
+          ]
+        },
+        "fixture": {
+          "type": "boolean"
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/source"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "classification",
+        "calibration",
+        "fixture",
+        "sources"
+      ],
+      "additionalProperties": false
+    },
+    "build": {
+      "type": "object",
+      "properties": {
+        "engine_id": {
+          "enum": [
+            "orchestrator",
+            "sumo",
+            "borden3d_scipy_fv",
+            "resource_baseline",
+            "google_maps_3d"
+          ]
+        },
+        "engine_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "code_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "config_sha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      },
+      "required": [
+        "engine_id",
+        "engine_version",
+        "code_sha256",
+        "config_sha256"
+      ],
+      "additionalProperties": false
+    },
+    "units": {
+      "type": "object",
+      "properties": {
+        "scenario_time": {
+          "const": "s"
+        },
+        "model_time": {
+          "const": "day"
+        },
+        "length": {
+          "const": "m"
+        },
+        "extraction_rate": {
+          "const": "m3/day"
+        },
+        "concentration": {
+          "const": "mg/L"
+        },
+        "mass": {
+          "const": "kg"
+        },
+        "cost": {
+          "const": "CNY"
+        }
+      },
+      "required": [
+        "scenario_time",
+        "model_time",
+        "length",
+        "extraction_rate",
+        "concentration",
+        "mass",
+        "cost"
+      ],
+      "additionalProperties": false
+    },
+    "artifact": {
+      "type": "object",
+      "properties": {
+        "artifact_id": {
+          "$ref": "#/$defs/id"
+        },
+        "path": {
+          "$ref": "#/$defs/path"
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "media_type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "role": {
+          "enum": [
+            "log",
+            "trajectory",
+            "concentration",
+            "metrics",
+            "config",
+            "summary"
+          ]
+        },
+        "units": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "artifact_id",
+        "path",
+        "sha256",
+        "media_type",
+        "role",
+        "units"
+      ],
+      "additionalProperties": false
+    },
+    "error": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "enum": [
+            "INVALID_INPUT",
+            "UNREACHABLE",
+            "GEOREFERENCE_UNAVAILABLE",
+            "ENGINE_FAILED",
+            "NONFINITE_OUTPUT",
+            "CANCELLED",
+            "TIMEOUT",
+            "ARTIFACT_INVALID",
+            "VERSION_CONFLICT"
+          ]
+        },
+        "message": {
+          "type": "string",
+          "minLength": 1
+        },
+        "retryable": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "code",
+        "message",
+        "retryable"
+      ],
+      "additionalProperties": false
+    },
+    "affine": {
+      "type": "object",
+      "properties": {
+        "matrix_2x3": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "minItems": 3,
+            "maxItems": 3
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "z_offset_m": {
+          "type": "number"
+        },
+        "transform_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "validation_artifact": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/path"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "matrix_2x3",
+        "z_offset_m",
+        "transform_version",
+        "validation_artifact"
+      ],
+      "additionalProperties": false
+    },
+    "georef": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "enum": [
+            "uncalibrated",
+            "synthetic_anchor",
+            "calibrated"
+          ]
+        },
+        "projected_crs": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "local_to_projected": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/affine"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "anchor_wgs84": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/lonlat"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "status",
+        "projected_crs",
+        "local_to_projected",
+        "anchor_wgs84"
+      ],
+      "additionalProperties": false
+    },
+    "time_axis": {
+      "type": "object",
+      "properties": {
+        "scenario_origin_utc": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "Z$"
+        },
+        "reference_model_day": {
+          "type": "number",
+          "minimum": 0
+        },
+        "model_end_day": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      },
+      "required": [
+        "scenario_origin_utc",
+        "reference_model_day",
+        "model_end_day"
+      ],
+      "additionalProperties": false
+    },
+    "network": {
+      "type": "object",
+      "properties": {
+        "network_id": {
+          "$ref": "#/$defs/id"
+        },
+        "source_id": {
+          "$ref": "#/$defs/id"
+        },
+        "network_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "proj_parameter": {
+          "type": "string",
+          "minLength": 1
+        },
+        "net_offset_m": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "required": [
+        "network_id",
+        "source_id",
+        "network_sha256",
+        "proj_parameter",
+        "net_offset_m"
+      ],
+      "additionalProperties": false
+    },
+    "well": {
+      "type": "object",
+      "properties": {
+        "well_id": {
+          "$ref": "#/$defs/id"
+        },
+        "cell_id": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "position": {
+          "$ref": "#/$defs/xyz"
+        },
+        "synthetic": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "well_id",
+        "cell_id",
+        "position",
+        "synthetic"
+      ],
+      "additionalProperties": false
+    },
+    "closure": {
+      "type": "object",
+      "properties": {
+        "edge_id": {
+          "$ref": "#/$defs/id"
+        },
+        "start_s": {
+          "type": "number",
+          "minimum": 0
+        },
+        "stop_s": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "edge_id",
+        "start_s",
+        "stop_s"
+      ],
+      "additionalProperties": false
+    },
+    "dispatch": {
+      "type": "object",
+      "properties": {
+        "task_id": {
+          "$ref": "#/$defs/id"
+        },
+        "vehicle_id": {
+          "$ref": "#/$defs/id"
+        },
+        "depart_s": {
+          "type": "number",
+          "minimum": 0
+        },
+        "from_edge": {
+          "$ref": "#/$defs/id"
+        },
+        "to_edge": {
+          "$ref": "#/$defs/id"
+        }
+      },
+      "required": [
+        "task_id",
+        "vehicle_id",
+        "depart_s",
+        "from_edge",
+        "to_edge"
+      ],
+      "additionalProperties": false
+    },
+    "scenario": {
+      "type": "object",
+      "properties": {
+        "time_axis": {
+          "$ref": "#/$defs/time_axis"
+        },
+        "georeference": {
+          "$ref": "#/$defs/georef"
+        },
+        "service_extent_m": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "const": 100000
+            },
+            {
+              "const": 100000
+            }
+          ],
+          "items": false,
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "hydro_config_path": {
+          "const": "borden3d_config.json"
+        },
+        "hydro_profile": {
+          "enum": [
+            "smoke",
+            "quick",
+            "full"
+          ]
+        },
+        "wells": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/well"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "time_axis",
+        "georeference",
+        "service_extent_m",
+        "hydro_config_path",
+        "hydro_profile",
+        "wells"
+      ],
+      "additionalProperties": false
+    },
+    "traffic_request": {
+      "type": "object",
+      "properties": {
+        "network": {
+          "$ref": "#/$defs/network"
+        },
+        "dispatches": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/dispatch"
+          },
+          "minItems": 1
+        },
+        "closures": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/closure"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "network",
+        "dispatches",
+        "closures"
+      ],
+      "additionalProperties": false
+    },
+    "route": {
+      "type": "object",
+      "properties": {
+        "task_id": {
+          "$ref": "#/$defs/id"
+        },
+        "vehicle_id": {
+          "$ref": "#/$defs/id"
+        },
+        "route_id": {
+          "$ref": "#/$defs/id"
+        },
+        "reachable": {
+          "type": "boolean"
+        },
+        "depart_s": {
+          "type": "number",
+          "minimum": 0
+        },
+        "arrival_time_s": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "edge_ids": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "minItems": 0
+        },
+        "trajectory_artifact_id": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "reason": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "task_id",
+        "vehicle_id",
+        "route_id",
+        "reachable",
+        "depart_s",
+        "arrival_time_s",
+        "edge_ids",
+        "trajectory_artifact_id",
+        "reason"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "reachable": {
+                "const": true
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "arrival_time_s": {
+                "type": "number",
+                "minimum": 0
+              },
+              "edge_ids": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/id"
+                },
+                "minItems": 1
+              },
+              "trajectory_artifact_id": {
+                "$ref": "#/$defs/id"
+              },
+              "reason": {
+                "type": "null"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "arrival_time_s": {
+                "type": "null"
+              },
+              "edge_ids": {
+                "maxItems": 0
+              },
+              "trajectory_artifact_id": {
+                "type": "null"
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "traffic_result": {
+      "type": "object",
+      "properties": {
+        "network_id": {
+          "$ref": "#/$defs/id"
+        },
+        "routes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/route"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "network_id",
+        "routes"
+      ],
+      "additionalProperties": false
+    },
+    "resource_task": {
+      "type": "object",
+      "properties": {
+        "task_id": {
+          "$ref": "#/$defs/id"
+        },
+        "well_id": {
+          "$ref": "#/$defs/id"
+        },
+        "vehicle_id": {
+          "$ref": "#/$defs/id"
+        },
+        "crew_ids": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "minItems": 1
+        },
+        "equipment_ids": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "minItems": 1
+        },
+        "vehicle_arrival_s": {
+          "type": "number",
+          "minimum": 0
+        },
+        "unload_complete_s": {
+          "type": "number",
+          "minimum": 0
+        },
+        "install_complete_s": {
+          "type": "number",
+          "minimum": 0
+        },
+        "pump_start_s": {
+          "type": "number",
+          "minimum": 0
+        },
+        "pump_stop_s": {
+          "type": "number",
+          "minimum": 0
+        },
+        "extraction_rate_m3_day": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "task_id",
+        "well_id",
+        "vehicle_id",
+        "crew_ids",
+        "equipment_ids",
+        "vehicle_arrival_s",
+        "unload_complete_s",
+        "install_complete_s",
+        "pump_start_s",
+        "pump_stop_s",
+        "extraction_rate_m3_day"
+      ],
+      "additionalProperties": false
+    },
+    "resource_result": {
+      "type": "object",
+      "properties": {
+        "feasible": {
+          "type": "boolean"
+        },
+        "tasks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/resource_task"
+          },
+          "minItems": 0
+        },
+        "violations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "feasible",
+        "tasks",
+        "violations"
+      ],
+      "additionalProperties": false
+    },
+    "pump_event": {
+      "type": "object",
+      "properties": {
+        "task_id": {
+          "$ref": "#/$defs/id"
+        },
+        "well_id": {
+          "$ref": "#/$defs/id"
+        },
+        "cell_id": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "start_s": {
+          "type": "number",
+          "minimum": 0
+        },
+        "stop_s": {
+          "type": "number",
+          "minimum": 0
+        },
+        "extraction_rate_m3_day": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "task_id",
+        "well_id",
+        "cell_id",
+        "start_s",
+        "stop_s",
+        "extraction_rate_m3_day"
+      ],
+      "additionalProperties": false
+    },
+    "hydro_request": {
+      "type": "object",
+      "properties": {
+        "time_axis": {
+          "$ref": "#/$defs/time_axis"
+        },
+        "engine_copy": {
+          "const": "root_standalone"
+        },
+        "config_path": {
+          "const": "borden3d_config.json"
+        },
+        "profile": {
+          "enum": [
+            "smoke",
+            "quick",
+            "full"
+          ]
+        },
+        "pump_events": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/pump_event"
+          },
+          "minItems": 0
+        },
+        "risk_window_start_day": {
+          "type": "number",
+          "minimum": 0
+        },
+        "risk_window_stop_day": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "time_axis",
+        "engine_copy",
+        "config_path",
+        "profile",
+        "pump_events",
+        "risk_window_start_day",
+        "risk_window_stop_day"
+      ],
+      "additionalProperties": false
+    },
+    "hydro_result": {
+      "type": "object",
+      "properties": {
+        "engine_copy": {
+          "const": "root_standalone"
+        },
+        "model_signature": {
+          "$ref": "#/$defs/sha256"
+        },
+        "profile": {
+          "enum": [
+            "smoke",
+            "quick",
+            "full"
+          ]
+        },
+        "times_day": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "minimum": 0
+          },
+          "minItems": 2
+        },
+        "concentration_artifact_id": {
+          "$ref": "#/$defs/id"
+        },
+        "metrics": {
+          "type": "object",
+          "properties": {
+            "residual_mass_kg": {
+              "type": "number",
+              "minimum": 0
+            },
+            "boundary_output_mass_kg": {
+              "type": "number",
+              "minimum": 0
+            },
+            "pumped_mass_kg": {
+              "type": "number",
+              "minimum": 0
+            },
+            "net_source_input_mass_kg": {
+              "type": "number",
+              "minimum": 0
+            },
+            "max_drawdown_m": {
+              "type": "number",
+              "minimum": 0
+            },
+            "max_concentration_mg_L": {
+              "type": "number",
+              "minimum": 0
+            },
+            "water_balance_max_m3_day": {
+              "type": "number",
+              "minimum": 0
+            },
+            "solute_mass_balance_relative": {
+              "type": "number",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "residual_mass_kg",
+            "boundary_output_mass_kg",
+            "pumped_mass_kg",
+            "net_source_input_mass_kg",
+            "max_drawdown_m",
+            "max_concentration_mg_L",
+            "water_balance_max_m3_day",
+            "solute_mass_balance_relative"
+          ],
+          "additionalProperties": false
+        },
+        "risk_interpretation": {
+          "const": "synthetic_model_indicator_not_health_risk"
+        },
+        "risk_window_start_day": {
+          "type": "number",
+          "minimum": 0
+        },
+        "risk_window_stop_day": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "engine_copy",
+        "model_signature",
+        "profile",
+        "times_day",
+        "concentration_artifact_id",
+        "metrics",
+        "risk_interpretation",
+        "risk_window_start_day",
+        "risk_window_stop_day"
+      ],
+      "additionalProperties": false
+    },
+    "run_status": {
+      "type": "object",
+      "properties": {
+        "previous_status": {
+          "anyOf": [
+            {
+              "enum": [
+                "queued",
+                "running",
+                "succeeded",
+                "failed",
+                "cancelled"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "updated_at_utc": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "Z$"
+        },
+        "progress_fraction": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": [
+        "previous_status",
+        "updated_at_utc",
+        "progress_fraction"
+      ],
+      "additionalProperties": false
+    },
+    "vehicle": {
+      "type": "object",
+      "properties": {
+        "vehicle_id": {
+          "$ref": "#/$defs/id"
+        },
+        "capacity_kg": {
+          "type": "number",
+          "minimum": 0
+        },
+        "available_from_s": {
+          "type": "number",
+          "minimum": 0
+        },
+        "available_until_s": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "vehicle_id",
+        "capacity_kg",
+        "available_from_s",
+        "available_until_s"
+      ],
+      "additionalProperties": false
+    },
+    "stock": {
+      "type": "object",
+      "properties": {
+        "depot_id": {
+          "$ref": "#/$defs/id"
+        },
+        "item_id": {
+          "$ref": "#/$defs/id"
+        },
+        "quantity": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "depot_id",
+        "item_id",
+        "quantity"
+      ],
+      "additionalProperties": false
+    },
+    "crew": {
+      "type": "object",
+      "properties": {
+        "crew_id": {
+          "$ref": "#/$defs/id"
+        },
+        "skills": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "available_from_s": {
+          "type": "number",
+          "minimum": 0
+        },
+        "available_until_s": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "crew_id",
+        "skills",
+        "available_from_s",
+        "available_until_s"
+      ],
+      "additionalProperties": false
+    },
+    "equipment": {
+      "type": "object",
+      "properties": {
+        "equipment_id": {
+          "$ref": "#/$defs/id"
+        },
+        "type": {
+          "$ref": "#/$defs/id"
+        },
+        "mass_kg": {
+          "type": "number",
+          "minimum": 0
+        },
+        "available_from_s": {
+          "type": "number",
+          "minimum": 0
+        },
+        "available_until_s": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "equipment_id",
+        "type",
+        "mass_kg",
+        "available_from_s",
+        "available_until_s"
+      ],
+      "additionalProperties": false
+    },
+    "task_request": {
+      "type": "object",
+      "properties": {
+        "task_id": {
+          "$ref": "#/$defs/id"
+        },
+        "well_id": {
+          "$ref": "#/$defs/id"
+        },
+        "depot_id": {
+          "$ref": "#/$defs/id"
+        },
+        "required_item_id": {
+          "$ref": "#/$defs/id"
+        },
+        "required_quantity": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "required_skill": {
+          "$ref": "#/$defs/id"
+        },
+        "priority": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "earliest_start_s": {
+          "type": "number",
+          "minimum": 0
+        },
+        "latest_stop_s": {
+          "type": "number",
+          "minimum": 0
+        },
+        "unload_duration_s": {
+          "type": "number",
+          "minimum": 0
+        },
+        "install_duration_s": {
+          "type": "number",
+          "minimum": 0
+        },
+        "pump_duration_s": {
+          "type": "number",
+          "minimum": 0
+        },
+        "extraction_rate_m3_day": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "task_id",
+        "well_id",
+        "depot_id",
+        "required_item_id",
+        "required_quantity",
+        "required_skill",
+        "priority",
+        "earliest_start_s",
+        "latest_stop_s",
+        "unload_duration_s",
+        "install_duration_s",
+        "pump_duration_s",
+        "extraction_rate_m3_day"
+      ],
+      "additionalProperties": false
+    },
+    "resource_request": {
+      "type": "object",
+      "properties": {
+        "traffic_run_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "routes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/route"
+          }
+        },
+        "vehicles": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/vehicle"
+          }
+        },
+        "crews": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/crew"
+          }
+        },
+        "equipment": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/equipment"
+          }
+        },
+        "inventory": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/stock"
+          }
+        },
+        "tasks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/task_request"
+          }
+        }
+      },
+      "required": [
+        "traffic_run_id",
+        "routes",
+        "vehicles",
+        "crews",
+        "equipment",
+        "inventory",
+        "tasks"
+      ],
+      "additionalProperties": false
+    },
+    "trajectory_sample": {
+      "type": "object",
+      "properties": {
+        "vehicle_id": {
+          "$ref": "#/$defs/id"
+        },
+        "route_id": {
+          "$ref": "#/$defs/id"
+        },
+        "event_time_s": {
+          "type": "number",
+          "minimum": 0
+        },
+        "sumo_position_m": {
+          "$ref": "#/$defs/xy"
+        },
+        "wgs84": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/lonlat"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "vehicle_id",
+        "route_id",
+        "event_time_s",
+        "sumo_position_m",
+        "wgs84"
+      ],
+      "additionalProperties": false
+    },
+    "run_request": {
+      "type": "object",
+      "properties": {
+        "mode": {
+          "enum": [
+            "normal",
+            "closure",
+            "no_pump"
+          ]
+        },
+        "idempotency_key": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{7,127}$"
+        }
+      },
+      "required": [
+        "mode",
+        "idempotency_key"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "scenario"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/scenario"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "traffic_request"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/traffic_request"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "traffic_result"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/traffic_result"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "resource_result"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/resource_result"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "hydro_request"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/hydro_request"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "hydro_result"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/hydro_result"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "run_status"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/run_status"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "enum": [
+              "failed",
+              "cancelled"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "error": {
+            "$ref": "#/$defs/error"
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "error": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "hydro_result"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "status": {
+            "const": "succeeded"
+          },
+          "model_build": {
+            "properties": {
+              "engine_id": {
+                "const": "borden3d_scipy_fv"
+              }
+            }
+          },
+          "artifacts": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "traffic_result"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "status": {
+            "const": "succeeded"
+          },
+          "model_build": {
+            "properties": {
+              "engine_id": {
+                "const": "sumo"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "resource_request"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/resource_request"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "run_request"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "status": {
+            "const": "queued"
+          },
+          "artifacts": {
+            "maxItems": 0
+          },
+          "model_build": {
+            "properties": {
+              "engine_id": {
+                "const": "orchestrator"
+              }
+            }
+          },
+          "payload": {
+            "$ref": "#/$defs/run_request"
+          }
+        }
+      }
+    }
+  ]
+}

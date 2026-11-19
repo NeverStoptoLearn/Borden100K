@@ -1,0 +1,86 @@
+{
+  "manifest_version": "dual-scenes-v1",
+  "scenario_id": "borden_reference_100k",
+  "scenario_version": 1001,
+  "title": "Borden 参考场景",
+  "seed": 20261109,
+  "synthetic": false,
+  "coordinates": {
+    "coordinate_frame": "wgs84_projected",
+    "projected_crs": "EPSG:32617",
+    "extent_m": [
+      537332.1913419699,
+      4848522.441274976,
+      637332.1913419699,
+      4948522.441274976
+    ],
+    "anchor_wgs84": {
+      "lon": -79.9064,
+      "lat": 44.2347
+    }
+  },
+  "availability": {
+    "normal": {
+      "allowed": false,
+      "blockers": [
+        "TARGET_ROAD_ACCEPTANCE_NOT_RUN"
+      ]
+    },
+    "closure": {
+      "allowed": false,
+      "blockers": [
+        "TARGET_ROAD_ACCEPTANCE_NOT_RUN"
+      ]
+    },
+    "no_pump": {
+      "allowed": true,
+      "blockers": []
+    }
+  },
+  "sources": [
+    {
+      "source_id": "fcsi-11022032",
+      "reference": "docs/roads/site11022032/REPORT.md; official registry point only, shared location, not survey or model georeference",
+      "license": "Open Government Licence - Canada",
+      "synthetic": false
+    },
+    {
+      "source_id": "model-defaults-v1",
+      "reference": "Original certified Borden3D synthetic uncalibrated scientific configuration; no field calibration",
+      "license": "project scientific input",
+      "synthetic": true
+    }
+  ],
+  "science": {
+    "code": {
+      "path": "borden3d_common.py",
+      "sha256": "6a1fcf8ddf67f61654b3c6dbe4b6c67258e6908b0d2d131a5f638ebfb0005275",
+      "media_type": "text/x-python"
+    },
+    "config": {
+      "path": "phase1/scenarios/borden_reference_100k/v1001/hydro-config.json",
+      "sha256": "5774c92376b878f3a88841f8a36c204bf63e6334154b699e1ba572f8acc0ff48",
+      "media_type": "application/json"
+    },
+    "profile": "smoke",
+    "model_signature": "49841c8c1a7fbf66f4fe80e4380204d221d65206a8f3a5f5469b4d2e2d5a3191"
+  },
+  "assets": {
+    "network": null,
+    "scenario_template": {
+      "path": "phase1/scenarios/borden_reference_100k/v1001/scenario.template.json",
+      "sha256": "2c337625b949521f9386dee43e63043b92813bdcaeb1be14e861902d95cab8a2",
+      "media_type": "application/json"
+    },
+    "parameters_template": {
+      "path": "phase1/scenarios/borden_reference_100k/v1001/parameters.template.json",
+      "sha256": "efe0a09354f5a77f18e81f2092920b0949b5d6db80ff677f48f045a93979a00e",
+      "media_type": "application/json"
+    },
+    "display": {
+      "path": "phase1/scenarios/borden_reference_100k/v1001/display.layers.json",
+      "sha256": "193a2ec600189c961c931c00158ebd4035aea7f169c2188a0db91b20b68a13f6",
+      "media_type": "application/json"
+    }
+  }
+}

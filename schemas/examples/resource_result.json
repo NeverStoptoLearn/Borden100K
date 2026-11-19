@@ -1,0 +1,64 @@
+{
+  "contract_version": "1.0.0",
+  "kind": "resource_result",
+  "experiment_id": "synthetic-demo",
+  "run_id": "58fc4984-de61-49ab-bd57-5caed4bfc125",
+  "scenario_id": "demo",
+  "scenario_version": 1,
+  "parameter_version": "baseline-v1",
+  "model_build": {
+    "engine_id": "resource_baseline",
+    "engine_version": "planned",
+    "code_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "config_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "seed": 42,
+  "units": {
+    "scenario_time": "s",
+    "model_time": "day",
+    "length": "m",
+    "extraction_rate": "m3/day",
+    "concentration": "mg/L",
+    "mass": "kg",
+    "cost": "CNY"
+  },
+  "data_provenance": {
+    "classification": "synthetic",
+    "calibration": "none",
+    "fixture": true,
+    "sources": [
+      {
+        "source_id": "demo",
+        "reference": "schema illustration only; not engine output",
+        "license": "project test fixture",
+        "synthetic": true
+      }
+    ]
+  },
+  "status": "succeeded",
+  "artifacts": [],
+  "error": null,
+  "payload": {
+    "feasible": true,
+    "tasks": [
+      {
+        "task_id": "install-1",
+        "well_id": "well-1",
+        "vehicle_id": "truck-1",
+        "crew_ids": [
+          "crew-1"
+        ],
+        "equipment_ids": [
+          "pump-1"
+        ],
+        "vehicle_arrival_s": 600,
+        "unload_complete_s": 900,
+        "install_complete_s": 1800,
+        "pump_start_s": 1800,
+        "pump_stop_s": 86400,
+        "extraction_rate_m3_day": 1
+      }
+    ],
+    "violations": []
+  }
+}

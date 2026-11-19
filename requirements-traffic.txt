@@ -1,0 +1,4 @@
+-r requirements.txt
+sumolib==1.28.0
+traci==1.28.0
+# Install the SUMO 1.28.0 executable separately and set SUMO_HOME/SUMO_BINARY.

@@ -1,0 +1,15 @@
+{
+  "normal": null,
+  "closure": null,
+  "no_pump": {
+    "scenario": {
+      "id": "borden_reference_100k",
+      "version": 1001
+    },
+    "risk_window_start_day": 0.0,
+    "risk_window_stop_day": 21900.0,
+    "network_path": null,
+    "traffic": null,
+    "resources": null
+  }
+}

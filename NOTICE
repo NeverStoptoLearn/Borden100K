@@ -1,0 +1,11 @@
+Borden100K Task Release v1.0-rc1
+
+Project-owned code is distributed under Apache License 2.0 as authorized by the
+project owner. Historical Borden3D source identities are recorded in
+SOURCE_PROVENANCE.json. Original scientific kernels remain byte-for-byte intact.
+
+Third-party Python/JavaScript/SUMO components retain their own licenses and are
+not bundled as installed environments. The Borden locator metadata cites the
+Government of Canada Open Government Licence. The bundled traffic example is
+procedurally generated synthetic data. No Google imagery or third-party road
+database is redistributed. This notice does not grant rights in third-party data.

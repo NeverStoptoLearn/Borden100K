@@ -1,0 +1,69 @@
+{
+  "contract_version": "1.0.0",
+  "kind": "traffic_result",
+  "experiment_id": "synthetic-demo",
+  "run_id": "58fc4984-de61-49ab-bd57-5caed4bfc125",
+  "scenario_id": "demo",
+  "scenario_version": 1,
+  "parameter_version": "baseline-v1",
+  "model_build": {
+    "engine_id": "sumo",
+    "engine_version": "planned",
+    "code_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "config_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "seed": 42,
+  "units": {
+    "scenario_time": "s",
+    "model_time": "day",
+    "length": "m",
+    "extraction_rate": "m3/day",
+    "concentration": "mg/L",
+    "mass": "kg",
+    "cost": "CNY"
+  },
+  "data_provenance": {
+    "classification": "synthetic",
+    "calibration": "none",
+    "fixture": true,
+    "sources": [
+      {
+        "source_id": "demo",
+        "reference": "schema illustration only; not engine output",
+        "license": "project test fixture",
+        "synthetic": true
+      }
+    ]
+  },
+  "status": "succeeded",
+  "artifacts": [
+    {
+      "artifact_id": "trajectory-1",
+      "path": "trajectory/vehicle.json",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "media_type": "application/json",
+      "role": "trajectory",
+      "units": "s,m"
+    }
+  ],
+  "error": null,
+  "payload": {
+    "network_id": "synthetic-grid",
+    "routes": [
+      {
+        "task_id": "install-1",
+        "vehicle_id": "truck-1",
+        "route_id": "r1",
+        "reachable": true,
+        "depart_s": 0,
+        "arrival_time_s": 600,
+        "edge_ids": [
+          "e0",
+          "e1"
+        ],
+        "trajectory_artifact_id": "trajectory-1",
+        "reason": null
+      }
+    ]
+  }
+}

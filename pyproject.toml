@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "borden100k-tasks"
+version = "1.0.0rc1"
+description = "Bounded groundwater and emergency-planning task evaluation interfaces"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+dependencies = ["numpy==2.2.6", "scipy==1.15.3", "jsonschema==4.23.0"]
+
+[project.scripts]
+borden-tasks = "borden_tasks.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["borden_tasks*", "phase1*"]
+exclude = ["phase1.frontend*", "phase1.tests*", "phase1.storage*", "phase1.optimization*", "phase1.research*"]
+
+# Supported distribution is a source checkout/archive. Configuration, schema,
+# and scene assets are resolved relative to that checkout. Editable installs
+# are convenient; an independently installed wheel is not an accepted target.

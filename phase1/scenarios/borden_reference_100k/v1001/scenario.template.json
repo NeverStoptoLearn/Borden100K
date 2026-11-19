@@ -1,0 +1,88 @@
+{
+  "contract_version": "1.0.0",
+  "kind": "scenario",
+  "experiment_id": "dual-scenes-v1",
+  "run_id": "58fc4984-de61-49ab-bd57-5caed4bfc125",
+  "scenario_id": "borden_reference_100k",
+  "scenario_version": 1001,
+  "parameter_version": "baseline-v1",
+  "model_build": {
+    "engine_id": "borden3d_scipy_fv",
+    "engine_version": "Task Release v1 reference build; actual runtime build is recorded per run",
+    "code_sha256": "6a1fcf8ddf67f61654b3c6dbe4b6c67258e6908b0d2d131a5f638ebfb0005275",
+    "config_sha256": "5774c92376b878f3a88841f8a36c204bf63e6334154b699e1ba572f8acc0ff48"
+  },
+  "seed": 20261109,
+  "units": {
+    "scenario_time": "s",
+    "model_time": "day",
+    "length": "m",
+    "extraction_rate": "m3/day",
+    "concentration": "mg/L",
+    "mass": "kg",
+    "cost": "CNY"
+  },
+  "data_provenance": {
+    "classification": "mixed",
+    "calibration": "none",
+    "fixture": false,
+    "sources": [
+      {
+        "source_id": "fcsi-11022032",
+        "reference": "docs/roads/site11022032/REPORT.md; official registry point only, shared location, not survey or model georeference",
+        "license": "Open Government Licence - Canada",
+        "synthetic": false
+      },
+      {
+        "source_id": "model-defaults-v1",
+        "reference": "Original certified Borden3D synthetic uncalibrated scientific configuration; no field calibration",
+        "license": "project scientific input",
+        "synthetic": true
+      }
+    ]
+  },
+  "status": "queued",
+  "artifacts": [],
+  "error": null,
+  "payload": {
+    "time_axis": {
+      "scenario_origin_utc": "2026-11-09T00:00:00Z",
+      "reference_model_day": 14600,
+      "model_end_day": 21900
+    },
+    "georeference": {
+      "status": "uncalibrated",
+      "projected_crs": null,
+      "local_to_projected": null,
+      "anchor_wgs84": null
+    },
+    "service_extent_m": [
+      100000,
+      100000
+    ],
+    "hydro_config_path": "borden3d_config.json",
+    "hydro_profile": "smoke",
+    "wells": [
+      {
+        "well_id": "well-1",
+        "cell_id": 100,
+        "synthetic": true,
+        "position": {
+          "x_local_m": 527.5323529411764,
+          "y_local_m": 480.9617647058824,
+          "z_local_m": 219.42510784313725
+        }
+      },
+      {
+        "well_id": "well-2",
+        "cell_id": 101,
+        "synthetic": true,
+        "position": {
+          "x_local_m": 608.6911764705882,
+          "y_local_m": 480.9617647058824,
+          "z_local_m": 219.68115196078432
+        }
+      }
+    ]
+  }
+}

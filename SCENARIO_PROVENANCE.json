@@ -1,0 +1,32 @@
+[
+  {
+    "scenario_id": "borden_reference_100k",
+    "original_version": 1,
+    "release_version": 1001,
+    "original_manifest_sha256": "7ea5099e645db998f272106c8cfa279c79fa3878df2bd6d1dcfb0406bd9b6d1e",
+    "release_manifest_sha256": "8c03d6cb580defcb9e93be6224ad0441b1455ea37771ee2561faf7e2af20e0d0",
+    "scientific_config_unchanged": true,
+    "network_attribute_tree_unchanged": true,
+    "deployment_metadata_changes": [
+      "new version/asset paths",
+      "private interpreter path removed",
+      "XML comments removed",
+      "new derived SHA values only"
+    ]
+  },
+  {
+    "scenario_id": "synthetic_multiterrain_100k",
+    "original_version": 1,
+    "release_version": 1001,
+    "original_manifest_sha256": "1ca73d21c870482f2f33c4bf7882152f88667704c008eac1fe7904a1f5c28341",
+    "release_manifest_sha256": "856e23d20385b9715b7d93ac34dd093592741962fa7e2cf321a4076039441899",
+    "scientific_config_unchanged": true,
+    "network_attribute_tree_unchanged": true,
+    "deployment_metadata_changes": [
+      "new version/asset paths",
+      "private interpreter path removed",
+      "XML comments removed",
+      "new derived SHA values only"
+    ]
+  }
+]

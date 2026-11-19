@@ -1,0 +1,31 @@
+{
+  "source_root": "E:\\study\\博士\\毕设",
+  "independent_chapter_folders": [
+    "实验代码_01_MITEDA_三维监测优化",
+    "实验代码_02_TSBPINN_三维两阶段反演",
+    "实验代码_03_FPAPINN_三维稳定反演",
+    "实验代码_04_HPNSGAII_三维应急调控"
+  ],
+  "copied_files": {
+    "borden3d_common.py": "c8699e13c27aed0af29621d815726f9863d462fcf063d252f2740173481443cf",
+    "borden3d_evolution.py": "41cfc3128e377c59f872c7fbcfd7995aa698c049104e81d5e5699e12fcdbd465",
+    "borden3d_pinn.py": "c30a8452c150dc9b425db91807103f6b9d0b9d7f54d402a0f20f6b18f7564b08",
+    "borden3d_bayesian.py": "1a8d94d77f978c80d68a52760ccacf7ca07ad8174ffb61fca0bb0145cbe12c86",
+    "borden3d_joint.py": "6b5d94e1364f3c93651e5af428733fa28351b3f1675d9190b168b0974ac6c0b7",
+    "borden3d_linked.py": "d6dbf5003a2b941685d9827a9d61a4129e5e7717fdd75c0b74e73f4eacf740c8",
+    "borden3d_sources.py": "23e7525f44e17084f1193f413250f67ef9170fa6d7cec98a3ac223e1ef94d7b7",
+    "borden3d_progress.py": "f6ae4a70183696953d083e00ae5fd358f4e194f4891b8ba2d8c17d0f0dc1806f",
+    "borden3d_uncertainty.py": "d463c06599ccfc7bde7713fc5f0af4adc7baf4d53ca20c815fdf5ff135ff6265",
+    "borden3d_config.json": "5774c92376b878f3a88841f8a36c204bf63e6334154b699e1ba572f8acc0ff48",
+    "borden3d_uncertainty_config.json": "69fdd58f09e478b538dce02e633451d706a0ef03d4433862833c0e8048b29723",
+    "run_borden3d.py": "c302e3cd7c85b097b2a9b56d3295facb0c6ae117eb3df840e601a6ea48f26761",
+    "run_borden3d_linked.py": "a3c46bd6c3d798729877926a88dde05302f42b91d9d5b4dd8dbee870a4d9bb36",
+    "verify_borden3d_linked.py": "defe93d85642569f3db32e602ee43b4ea05727b5ce97b69d904c62019e20423f",
+    "verify_borden3d_uncertainty.py": "b27169e450a60165e23b4db1bef30be36a34c19d4a439e6123151480e3f7998c",
+    "实验代码_01_MITEDA_三维监测优化/run_borden.py": "eec8d545a35f1236da74df620d36d7f124a66715936345a089ce0c3e9d0be52e",
+    "实验代码_02_TSBPINN_三维两阶段反演/run_borden.py": "3d93860a8ab74d259f4f851ab391c634508e4c8c5e495c8fed8011ef6aec0177",
+    "实验代码_03_FPAPINN_三维稳定反演/run_borden.py": "71c3b67494c5545f674522ad6e3781765778fdc517dc86810c1dc9044c07d80b",
+    "实验代码_04_HPNSGAII_三维应急调控/run_borden.py": "2baf87839c5710491b189dca3173ff09118c21501550d1522cfb47ffdda09265"
+  },
+  "chapter5_status": "Pending integration; source snapshot retained, not executed or changed"
+}

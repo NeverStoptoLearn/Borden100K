@@ -1,0 +1,11 @@
+{
+  "scope": "all Borden100K-owned local physical data across all registered volumes",
+  "hard_limit_bytes": 200000000000,
+  "preferred_bytes": 180000000000,
+  "official_scientific_admission": "BLOCKED_PENDING_FULL_OWNERSHIP_INVENTORY_AND_CAPACITY_ACCEPTANCE",
+  "maintenance_smoke_maximum_output_bytes": 67108864,
+  "automatic_deletion": false,
+  "historical_XML_replacement_authorized": false,
+  "original_rollback_retirement_authorized": false,
+  "thin_Git_payload_is_not_a_whole_project_capacity_measurement": true
+}

@@ -1,0 +1,161 @@
+{
+  "contract_version": "1.0.0",
+  "kind": "resource_request",
+  "experiment_id": "synthetic-demo",
+  "run_id": "58fc4984-de61-49ab-bd57-5caed4bfc125",
+  "scenario_id": "demo",
+  "scenario_version": 1,
+  "parameter_version": "baseline-v1",
+  "model_build": {
+    "engine_id": "orchestrator",
+    "engine_version": "planned",
+    "code_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "config_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "seed": 42,
+  "units": {
+    "scenario_time": "s",
+    "model_time": "day",
+    "length": "m",
+    "extraction_rate": "m3/day",
+    "concentration": "mg/L",
+    "mass": "kg",
+    "cost": "CNY"
+  },
+  "data_provenance": {
+    "classification": "synthetic",
+    "calibration": "none",
+    "fixture": true,
+    "sources": [
+      {
+        "source_id": "demo",
+        "reference": "schema illustration only; not engine output",
+        "license": "project test fixture",
+        "synthetic": true
+      }
+    ]
+  },
+  "status": "queued",
+  "artifacts": [],
+  "error": null,
+  "payload": {
+    "traffic_run_id": "58fc4984-de61-49ab-bd57-5caed4bfc125",
+    "routes": [
+      {
+        "task_id": "install-1",
+        "vehicle_id": "truck-1",
+        "route_id": "r1",
+        "reachable": true,
+        "depart_s": 0,
+        "arrival_time_s": 600,
+        "edge_ids": [
+          "e0",
+          "e1"
+        ],
+        "trajectory_artifact_id": "trajectory-1",
+        "reason": null
+      },
+      {
+        "task_id": "install-2",
+        "vehicle_id": "truck-2",
+        "route_id": "r2",
+        "reachable": true,
+        "depart_s": 10,
+        "arrival_time_s": 700,
+        "edge_ids": [
+          "e0",
+          "e1"
+        ],
+        "trajectory_artifact_id": "trajectory-1",
+        "reason": null
+      }
+    ],
+    "vehicles": [
+      {
+        "vehicle_id": "truck-1",
+        "capacity_kg": 1000,
+        "available_from_s": 0,
+        "available_until_s": 86400
+      },
+      {
+        "vehicle_id": "truck-2",
+        "capacity_kg": 1000,
+        "available_from_s": 0,
+        "available_until_s": 86400
+      }
+    ],
+    "crews": [
+      {
+        "crew_id": "crew-1",
+        "skills": [
+          "pump-install"
+        ],
+        "available_from_s": 0,
+        "available_until_s": 86400
+      },
+      {
+        "crew_id": "crew-2",
+        "skills": [
+          "pump-install"
+        ],
+        "available_from_s": 0,
+        "available_until_s": 86400
+      }
+    ],
+    "equipment": [
+      {
+        "equipment_id": "pump-1",
+        "type": "pump",
+        "mass_kg": 100,
+        "available_from_s": 0,
+        "available_until_s": 86400
+      },
+      {
+        "equipment_id": "pump-2",
+        "type": "pump",
+        "mass_kg": 100,
+        "available_from_s": 0,
+        "available_until_s": 86400
+      }
+    ],
+    "inventory": [
+      {
+        "depot_id": "depot-1",
+        "item_id": "pump",
+        "quantity": 2
+      }
+    ],
+    "tasks": [
+      {
+        "task_id": "install-1",
+        "well_id": "well-1",
+        "depot_id": "depot-1",
+        "required_item_id": "pump",
+        "required_quantity": 1,
+        "required_skill": "pump-install",
+        "priority": 1,
+        "earliest_start_s": 0,
+        "latest_stop_s": 86400,
+        "unload_duration_s": 300,
+        "install_duration_s": 900,
+        "pump_duration_s": 84600,
+        "extraction_rate_m3_day": 1
+      },
+      {
+        "task_id": "install-2",
+        "well_id": "well-2",
+        "depot_id": "depot-1",
+        "required_item_id": "pump",
+        "required_quantity": 1,
+        "required_skill": "pump-install",
+        "priority": 2,
+        "earliest_start_s": 0,
+        "latest_stop_s": 86400,
+        "unload_duration_s": 300,
+        "install_duration_s": 900,
+        "pump_duration_s": 3600,
+        "extraction_rate_m3_day": 1
+      }
+    ]
+  }
+}

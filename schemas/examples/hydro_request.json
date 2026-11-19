@@ -1,0 +1,63 @@
+{
+  "contract_version": "1.0.0",
+  "kind": "hydro_request",
+  "experiment_id": "synthetic-demo",
+  "run_id": "58fc4984-de61-49ab-bd57-5caed4bfc125",
+  "scenario_id": "demo",
+  "scenario_version": 1,
+  "parameter_version": "baseline-v1",
+  "model_build": {
+    "engine_id": "orchestrator",
+    "engine_version": "planned",
+    "code_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "config_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "seed": 42,
+  "units": {
+    "scenario_time": "s",
+    "model_time": "day",
+    "length": "m",
+    "extraction_rate": "m3/day",
+    "concentration": "mg/L",
+    "mass": "kg",
+    "cost": "CNY"
+  },
+  "data_provenance": {
+    "classification": "synthetic",
+    "calibration": "none",
+    "fixture": true,
+    "sources": [
+      {
+        "source_id": "demo",
+        "reference": "schema illustration only; not engine output",
+        "license": "project test fixture",
+        "synthetic": true
+      }
+    ]
+  },
+  "status": "queued",
+  "artifacts": [],
+  "error": null,
+  "payload": {
+    "time_axis": {
+      "scenario_origin_utc": "2026-11-09T00:00:00Z",
+      "reference_model_day": 14600,
+      "model_end_day": 21900
+    },
+    "engine_copy": "root_standalone",
+    "config_path": "borden3d_config.json",
+    "profile": "smoke",
+    "pump_events": [
+      {
+        "task_id": "install-1",
+        "well_id": "well-1",
+        "cell_id": 100,
+        "start_s": 1800,
+        "stop_s": 86400,
+        "extraction_rate_m3_day": 1
+      }
+    ],
+    "risk_window_start_day": 14600,
+    "risk_window_stop_day": 21900
+  }
+}

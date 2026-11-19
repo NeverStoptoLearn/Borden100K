@@ -1,0 +1,22 @@
+{
+  "display_version": "dual-display-v1",
+  "scenario_id": "borden_reference_100k",
+  "scenario_version": 1001,
+  "coordinate_frame": "wgs84_projected",
+  "extent_m": [
+    537332.1913419699,
+    4848522.441274976,
+    637332.1913419699,
+    4948522.441274976
+  ],
+  "terrain": null,
+  "rivers": [],
+  "bridges": [],
+  "cities": [],
+  "depots": [],
+  "task_locations": [],
+  "wells": [],
+  "vehicles": [],
+  "roads": [],
+  "hydro_placement": null
+}
