@@ -9,13 +9,13 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 5632,
-      "sha256": "af02f499df21b17302669405cb3eb270bb7b7eed7b2f593c2c08803ebdb7906f"
+      "bytes": 5732,
+      "sha256": "0a1bdcd308e6c93a502e2b3b51cfca06f94270d9a46b298e33c07fc9e00befab"
     },
     {
       "path": "BASELINES.md",
-      "bytes": 1249,
-      "sha256": "47d35d3b7b1c89c281a03ac748d9e2be83618c426ad6db9f8cad5525071126f1"
+      "bytes": 1724,
+      "sha256": "cc52040a7b2549a6d51e61c3fb65e3b3145aaa5c14bf91f59a210cb51e4f889d"
     },
     {
       "path": "CAPACITY_POLICY.json",
@@ -49,8 +49,8 @@
     },
     {
       "path": "REPRODUCIBILITY.md",
-      "bytes": 2200,
-      "sha256": "da723a5845315a465c9b4ece7dfef380c5bead94021bb134595d9c99ea43b7b4"
+      "bytes": 2863,
+      "sha256": "b04d0f57be0965ccae9d88423fc2b36b08bbf35a4c08509a3a4a3817a7557155"
     },
     {
       "path": "SCENARIOS.md",
@@ -149,13 +149,23 @@
     },
     {
       "path": "borden_tasks/__main__.py",
-      "bytes": 1687,
-      "sha256": "ff4a89fb51ca014e0152aa2c8abf8b42aa27cac220b39d23090bc82baf4b87dd"
+      "bytes": 2052,
+      "sha256": "cacfda37560634f68a6be48e9212dd0c94c133a57395af70ec94f31be7650d83"
     },
     {
       "path": "borden_tasks/core.py",
       "bytes": 12063,
       "sha256": "237eaa170e1caf0f51d1c835d465b581d30de012f92e2fa827c27a813442c1de"
+    },
+    {
+      "path": "borden_tasks/history.py",
+      "bytes": 1238,
+      "sha256": "f9959b937c0fbdb4849f4ea1f718dfc6ad36f41967a00b038b8ef1816280a432"
+    },
+    {
+      "path": "data/baselines/final-fronts.json.gz",
+      "bytes": 7574857,
+      "sha256": "babf68844134e4276d764629492ef22b5ecb3a05a94d4e829b51f33704281056"
     },
     {
       "path": "docs/roads/site11022032/REPORT.md",
@@ -696,6 +706,11 @@
       "path": "schemas/task-release-v1.schema.json",
       "bytes": 879,
       "sha256": "8112923ca1557b7ccc4cf35b07a7852e9367a2638edf9bcdd6d6f5715d29d512"
+    },
+    {
+      "path": "tests/test_retirement_boundary.py",
+      "bytes": 1078,
+      "sha256": "04965f99ff1895d3786498eaad1e72c9311ac2b071970c7b2744b85fd046242a"
     },
     {
       "path": "tests/test_task_release.py",

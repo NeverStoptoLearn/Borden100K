@@ -1,5 +1,15 @@
 # Reproducibility and integrity
 
+Historical raw availability is separate from numerical-result integrity.
+`python -m borden_tasks historical-source --path <old-path> --ledger <ledger>`
+returns `RAW_RETIRED` only for an approved, completed retirement event. Original
+SQLite and hash records are immutable. Arbitrary-generation legacy continuation
+and every-candidate native replay are outside v1. Direct legacy scripts are
+unsupported; they are not silently patched to report success. Before any actual
+retirement, registered legacy consumers must use the availability gateway or be
+disabled as historical read-only endpoints. The retirement plan alone does not
+activate a ledger or delete data.
+
 1. Use a source checkout/archive. The accepted science environment is Python
    3.10.19, NumPy 2.2.6, SciPy 1.15.3. Other science profiles/environment tuples
    remain unvalidated and may be rejected. The backend is tested separately on

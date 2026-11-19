@@ -33,6 +33,8 @@
 !/borden_tasks/__init__.py
 !/borden_tasks/__main__.py
 !/borden_tasks/core.py
+!/borden_tasks/history.py
+!/data/baselines/final-fronts.json.gz
 !/docs/roads/site11022032/REPORT.md
 !/phase1/__init__.py
 !/phase1/backend/__init__.py
@@ -141,6 +143,7 @@
 !/schemas/examples/traffic_result.json
 !/schemas/phase1-v1.schema.json
 !/schemas/task-release-v1.schema.json
+!/tests/test_retirement_boundary.py
 !/tests/test_task_release.py
 !/第七章_Borden联合应用/borden3d_bayesian.py
 !/第七章_Borden联合应用/borden3d_common.py

@@ -1,5 +1,12 @@
 # Baselines
 
+`data/baselines/final-fronts.json.gz` contains portable final numerical exports
+from 15 historical archives, preserving original archive/source SHA identities.
+These older problem definitions are historical comparisons, not certified v1
+scores. All original decisions and seed/checkpoint arrays remain in the local
+KEEP manifest. The portable export omits road geometry and records its digest;
+route-choice variables remain. No third-party road geometry license is implied.
+
 | Baseline | Configuration | Status |
 |---|---|---|
 | fixed prior source candidate | midpoint of the unchanged x/y/C inverse bounds; one original objective/gradient evaluation; seed 42 | supported bounded baseline |
