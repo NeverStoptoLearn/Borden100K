@@ -164,3 +164,13 @@
 **/.venv/
 **/.venvs/
 **/.env
+
+# Project-specific agent guidance
+!/AGENTS.md
+!/borden_tasks/AGENTS.md
+!/phase1/AGENTS.md
+!/data/AGENTS.md
+
+!/tools/project_guard.py
+
+!/tools/test_project_guard.py

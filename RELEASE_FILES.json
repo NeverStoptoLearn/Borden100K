@@ -9,8 +9,13 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 5732,
-      "sha256": "0a1bdcd308e6c93a502e2b3b51cfca06f94270d9a46b298e33c07fc9e00befab"
+      "bytes": 5897,
+      "sha256": "d6337ad214ef3d3a76131cd4bc7b1c56e31e8cb03d85e510e68d7b654206652e"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 5076,
+      "sha256": "7da0d7954ba351012cd6021f953d9ce71fca1799b4e331c884e9e921341cc07c"
     },
     {
       "path": "BASELINES.md",
@@ -44,8 +49,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4497,
-      "sha256": "9a6b72c8527f0c8ac2472724be8daeb7678d9f4b6420647594bfb257033dcbc7"
+      "bytes": 9456,
+      "sha256": "624c8729c4af97e6e4dcfee01263c4204a8fc998217dfd7565a08423f1dcde61"
     },
     {
       "path": "REPRODUCIBILITY.md",
@@ -143,6 +148,11 @@
       "sha256": "fea8a25258d33e491c8b2e529f23cd41ddbb50f9698cd4107d20892ccbd26393"
     },
     {
+      "path": "borden_tasks/AGENTS.md",
+      "bytes": 309,
+      "sha256": "002fbada3dad6885d9288a1d69c0172cc7d532a0916df5901f9c4768a83e1e1d"
+    },
+    {
       "path": "borden_tasks/__init__.py",
       "bytes": 83,
       "sha256": "568a3ebb7cf8e07be7520b7a118589043d4ac98ccc18aeafbcdb9c2b45139ece"
@@ -163,6 +173,11 @@
       "sha256": "f9959b937c0fbdb4849f4ea1f718dfc6ad36f41967a00b038b8ef1816280a432"
     },
     {
+      "path": "data/AGENTS.md",
+      "bytes": 279,
+      "sha256": "2817a4cbe4869420193db2d4d44cee96ef6ee2694d8a015ca1c3a67142ee50e0"
+    },
+    {
       "path": "data/baselines/final-fronts.json.gz",
       "bytes": 7574857,
       "sha256": "babf68844134e4276d764629492ef22b5ecb3a05a94d4e829b51f33704281056"
@@ -171,6 +186,11 @@
       "path": "docs/roads/site11022032/REPORT.md",
       "bytes": 410,
       "sha256": "ad7013d8b5b7b14f8bde791106b5e43daec8031bfb42123e316a8f146da2cfce"
+    },
+    {
+      "path": "phase1/AGENTS.md",
+      "bytes": 348,
+      "sha256": "972f05cbb65ee7b3a127ef155408c9aedcbf1a64505ea4d857b66f670259ed04"
     },
     {
       "path": "phase1/__init__.py",
@@ -716,6 +736,16 @@
       "path": "tests/test_task_release.py",
       "bytes": 4803,
       "sha256": "f29a7b88556c4b72b6e18bcdf753557b06fc025615178ceded3a0537be6d007d"
+    },
+    {
+      "path": "tools/project_guard.py",
+      "bytes": 2814,
+      "sha256": "9244487b47a59ba415c699563af527169b7dfc9a682e32bafd0d78eb8a8c95bf"
+    },
+    {
+      "path": "tools/test_project_guard.py",
+      "bytes": 3350,
+      "sha256": "bec20b60bef8e97ee52121410e4f5c1ca99062caf0ea5296027e1488312b6890"
     },
     {
       "path": "第七章_Borden联合应用/borden3d_bayesian.py",
