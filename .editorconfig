@@ -1,0 +1,19 @@
+root = true
+
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.py]
+indent_size = 4
+
+# Hash-sensitive bytes: edit neither content nor whitespace through an editor.
+[{borden3d_common.py,borden3d_config.json,MODEL_SHA256.json,SCENARIO_PROVENANCE.json,schemas/**,phase1/scenarios/**/*.json,phase1/traffic/scenarios/**}]
+charset = unset
+end_of_line = unset
+insert_final_newline = unset
+trim_trailing_whitespace = unset

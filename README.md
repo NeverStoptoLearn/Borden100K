@@ -96,13 +96,19 @@ borden3d_config.json  Local groundwater model parameters
 
 ## Tests and documentation
 
+For development checks, install `requirements-dev.txt` in a compatible environment:
+
 ```sh
+python -m pip install -r requirements-dev.txt
+python -B tools/check_integrity.py
 python -B -m unittest discover -s tests -v
 ```
 
-API tests use `requirements-backend.txt`. With frontend dependencies installed,
+The development requirements include the API test dependencies. With frontend dependencies installed,
 run `npm test -- --run` from `phase1/frontend`.
 
 See [docs/usage.md](docs/usage.md) for web startup, inputs, units, outputs and
-troubleshooting. Source code is licensed under [Apache-2.0](LICENSE);
+troubleshooting. For development, see [architecture](docs/architecture.md),
+[interfaces](docs/development/interfaces.md), [testing](docs/development/testing.md)
+and [contributing](CONTRIBUTING.md). Source code is licensed under [Apache-2.0](LICENSE);
 third-party attribution is in [NOTICE](NOTICE).

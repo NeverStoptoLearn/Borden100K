@@ -5,7 +5,7 @@ import json
 import math
 import re
 from pathlib import Path
-from phase1.backend.core import ROOT, Problem, safe_path, sha, dump
+from phase1.contracts import ROOT, Problem, safe_path, sha, dump
 
 IDS = {'borden_reference_100k', 'synthetic_multiterrain_100k'}
 VERSION = 'dual-scenes-v1'
@@ -52,7 +52,7 @@ def get_scene(ident, version):
     for gate in m['availability'].values():
         strict(gate,'allowed blockers')
         if type(gate['allowed']) is not bool or not isinstance(gate['blockers'],list) or any(not isinstance(t,str) or not t for t in gate['blockers']) or gate['allowed'] != (not gate['blockers']):raise Problem('INVALID_INPUT','Invalid mode gate')
-    from phase1.backend.core import validate
+    from phase1.contracts import validate
     if not m['sources'] or len({r['source_id'] for r in m['sources']})!=len(m['sources']):raise Problem('INVALID_INPUT','Scene sources missing/duplicate')
     for source in m['sources']:validate(source,'source')
     if m['coordinates']['coordinate_frame']=='synthetic_local_m' and (m['coordinates']['projected_crs'] is not None or m['coordinates']['anchor_wgs84'] is not None):raise Problem('INVALID_INPUT','Synthetic scene cannot have WGS84')

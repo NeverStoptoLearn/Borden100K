@@ -3,7 +3,7 @@ import json
 import math
 import re
 from .registry import get_scene, read_asset
-from phase1.backend.core import Problem
+from phase1.contracts import Problem
 
 
 def context_for(ident, version):

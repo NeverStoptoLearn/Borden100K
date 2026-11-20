@@ -8,7 +8,10 @@
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1",
     "test": "vitest",
-    "test:browser": "playwright test"
+    "test:browser": "playwright test",
+    "lint": "eslint src tests vite.config.js eslint.config.cjs --max-warnings 0",
+    "format:check": "prettier --check .",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@deck.gl/core": "9.4.1",
@@ -24,6 +27,11 @@
     "@playwright/test": "1.56.1",
     "@vitejs/plugin-vue": "5.2.4",
     "vite": "6.4.1",
-    "vitest": "3.2.4"
+    "vitest": "3.2.4",
+    "@eslint/js": "9.39.1",
+    "eslint": "9.39.1",
+    "eslint-plugin-vue": "10.5.1",
+    "globals": "16.5.0",
+    "prettier": "3.6.2"
   }
 }
