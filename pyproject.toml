@@ -20,3 +20,20 @@ exclude = ["phase1.frontend*", "phase1.tests*", "phase1.storage*", "phase1.optim
 # Supported distribution is a source checkout/archive. Configuration, schema,
 # and scene assets are resolved relative to that checkout. Editable installs
 # are convenient; an independently installed wheel is not an accepted target.
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+force-exclude = true
+# Incremental scope; expand it only after reviewing each existing module.
+include = ["borden_tasks/*.py", "phase1/contracts.py", "phase1/backend/core.py", "tests/*.py", "tools/check_integrity.py"]
+extend-exclude = ["borden3d_common.py", "borden3d_config.json", "MODEL_SHA256.json", "SCENARIO_PROVENANCE.json", "schemas", "phase1/scenarios/**/*.json", "phase1/traffic/scenarios", ".maintenance", "borden_tasks/history.py"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
+
+[tool.ruff.format]
+quote-style = "single"
+
+[tool.ruff.lint.isort]
+combine-as-imports = true

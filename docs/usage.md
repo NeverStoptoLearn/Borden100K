@@ -2,43 +2,94 @@
 
 ## Environments
 
-Numerical examples use Python 3.10.19, NumPy 2.2.6 and SciPy 1.15.3. Core
-dependencies are pinned in `requirements.txt`. The API uses
-`requirements-backend.txt`; its startup below uses a Python 3.11 environment
-and a separately selected numerical interpreter. Traffic bindings are listed
-in `requirements-traffic.txt`; install them in the interpreter used for traffic.
-Reuse an existing compatible environment when available.
+| Component | Environment |
+|---|---|
+| Numerical examples and scientific subprocess | Python **3.10.19**, NumPy **2.2.6**, SciPy **1.15.3**; `requirements.txt` |
+| API and worker host | Python **3.11** (existing integration checked with 3.11.9); `requirements-backend.txt` |
+| Traffic subprocess | Numerical environment plus `requirements-traffic.txt`, SUMO executable **1.28.0** |
+| Web frontend | Node.js **22.x**, npm, and the checked-in `package-lock.json`; Vue **3.5.22**, Vite **6.4.1** |
+
+Run commands from the repository root unless another directory is shown. Reuse
+compatible environments when available. The README creates `.venv` using Python
+3.10.19; `python --version` must report that exact version before creating it.
+Select the API interpreter separately. In Windows PowerShell, the setup commands
+below use the Python launcher to select Python 3.11:
+
+```powershell
+py -3.11 -m venv .venvs/api
+& ./.venvs/api/Scripts/python.exe -m pip install -r requirements-backend.txt
+& ./.venv/Scripts/python.exe -m pip install -r requirements-traffic.txt
+```
+
+The second requirements file installs the Python bindings; install the SUMO 1.28.0
+executable separately. If `sumo` is already on PATH, no override is needed.
+Otherwise, replace the placeholder with the installation directory containing `bin`:
+
+```powershell
+$env:SUMO_HOME = "<path-to-sumo-1.28.0>"
+& "$env:SUMO_HOME/bin/sumo.exe" --version
+```
+
+Alternatively set `SUMO_BINARY` to the full `sumo.exe` path. Keep the same SUMO
+configuration in **both the API and worker terminals**: the API checks scene
+availability, while the worker executes traffic. A separate traffic interpreter
+can be selected with worker `--traffic-python`; install `requirements-traffic.txt`
+in that interpreter instead.
+
+On Linux/macOS, create the numerical environment with the installed Python 3.10.19
+interpreter (`python3.10 --version` to check), use `python3.11 -m venv .venvs/api`
+for the API, and replace `Scripts/python.exe` with `bin/python`. Environment
+variables use `export NAME=value`. For SUMO use `export SUMO_HOME=/path/to/sumo-1.28.0`
+or `export SUMO_BINARY=/full/path/to/sumo`, then check `"$SUMO_HOME/bin/sumo" --version`
+when using SUMO_HOME.
 
 ## API and worker
 
-From the repository root, in the backend environment:
+In a PowerShell terminal at the repository root, configure SUMO as above when
+using routing, then start the API:
 
 ```powershell
-python -m pip install -r requirements-backend.txt
 $env:BORDEN_BACKEND_HOME = "$PWD/artifacts/web-runtime"
 $env:BORDEN_SCIENCE_PYTHON = (Resolve-Path .venv/Scripts/python.exe).Path
-python -m uvicorn phase1.backend.app:app --host 127.0.0.1 --port 8000
+& ./.venvs/api/Scripts/python.exe -m uvicorn phase1.backend.app:app --host 127.0.0.1 --port 8000
 ```
 
-Use another terminal with the same backend environment and variables for the worker:
+In another terminal at the same repository root, repeat the SUMO configuration
+and start the separate worker:
 
 ```powershell
 $env:BORDEN_BACKEND_HOME = "$PWD/artifacts/web-runtime"
 $env:BORDEN_SCIENCE_PYTHON = (Resolve-Path .venv/Scripts/python.exe).Path
 $env:BORDEN_RELEASE_MAINTENANCE_SMOKE = "1"
-python -m phase1.backend.worker --home "$env:BORDEN_BACKEND_HOME"
+& ./.venvs/api/Scripts/python.exe -m phase1.backend.worker --home "$env:BORDEN_BACKEND_HOME"
 ```
 
-`BORDEN_SCIENCE_PYTHON` points to the numerical Python environment. It must contain
-`requirements.txt`. For routing jobs, install the traffic requirements in that
-environment too, or pass `--traffic-python` to the worker to select an existing
-traffic environment. Configure `SUMO_HOME` or `SUMO_BINARY` in the worker terminal.
+`BORDEN_SCIENCE_PYTHON` selects the numerical Python environment, which contains
+`requirements.txt` and, for traffic, `requirements-traffic.txt`. The API and worker
+must use the same `BORDEN_BACKEND_HOME`. The worker's explicit smoke flag enables
+the existing bounded example execution path.
+
+For Linux/macOS, the equivalent API terminal is:
+
+```sh
+export BORDEN_BACKEND_HOME="$PWD/artifacts/web-runtime"
+export BORDEN_SCIENCE_PYTHON="$PWD/.venv/bin/python"
+.venvs/api/bin/python -m uvicorn phase1.backend.app:app --host 127.0.0.1 --port 8000
+```
+
+In the worker terminal, repeat those exports and any SUMO settings, then run:
+
+```sh
+export BORDEN_RELEASE_MAINTENANCE_SMOKE=1
+.venvs/api/bin/python -m phase1.backend.worker --home "$BORDEN_BACKEND_HOME"
+```
 
 Open `http://127.0.0.1:8000/docs` for the API documentation and
 `http://127.0.0.1:8000/api/v1/health` for its health response.
 
 ## Frontend
 
+Check `node --version` and `npm --version`. Use Node.js 22.x with its bundled npm.
 In another terminal:
 
 ```powershell
@@ -48,10 +99,21 @@ $env:BORDEN_API_PROXY = "http://127.0.0.1:8000"
 npm run dev
 ```
 
-Open the local address printed by Vite. Select a scene, choose a run mode and
-start a job. Completed jobs can be replayed with roads, vehicles, resources and
-groundwater concentration on the shared time axis. Google Maps 3D is an optional
-renderer; the default view uses the bundled local scene layers.
+On Linux/macOS, replace the variable assignment with
+`export BORDEN_API_PROXY=http://127.0.0.1:8000`. Set it before starting Vite.
+Keep the API and worker running; open the local address printed by Vite
+(usually `http://127.0.0.1:5173`). Select a scene, load its configuration, choose
+an available run mode and start a job. Both bundled scenes provide `no_pump`;
+the synthetic scene also provides the routing modes when SUMO is available.
+Completed jobs can be replayed with roads, vehicles, resources and groundwater
+concentration on the shared time axis. Google Maps 3D is an optional renderer;
+the default view uses the bundled local scene layers.
+
+For a production frontend build, run `npm run build` in `phase1/frontend`.
+`npm run preview` serves the build locally for inspection; the API and worker
+remain separate processes. The development proxy above is a Vite dev-server
+setting; a production host must also forward `/api` and its WebSocket connections
+to the API on the same origin.
 
 ## Task inputs
 

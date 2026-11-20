@@ -27,7 +27,9 @@ Two scene configurations are included:
 ## Install
 
 Use **Python 3.10.19** for the groundwater examples. The pinned numerical
-requirements are NumPy 2.2.6 and SciPy 1.15.3.
+requirements are NumPy 2.2.6 and SciPy 1.15.3. Check `python --version` before
+creating the numerical environment; it must report 3.10.19. The web frontend uses
+Node.js 22.x and npm. Traffic examples use SUMO 1.28.0 with matching Python bindings.
 
 ```powershell
 git clone https://github.com/NeverStoptoLearn/Borden100K.git
@@ -63,7 +65,9 @@ Use `--candidate x y C0` to evaluate another location (m) and concentration (mg/
 ## Routing and scheduling
 
 Install SUMO 1.28.0 and its Python bindings, then set `SUMO_HOME` or `SUMO_BINARY`
-if its executable is outside PATH:
+if its executable is outside PATH. `SUMO_HOME` is the installation directory
+containing `bin`; `SUMO_BINARY` is the full executable path. See the
+[environment setup](docs/usage.md#environments) for platform-specific commands:
 
 ```sh
 python -m pip install -r requirements-traffic.txt
@@ -96,13 +100,19 @@ borden3d_config.json  Local groundwater model parameters
 
 ## Tests and documentation
 
+For development checks, install `requirements-dev.txt` in a compatible environment:
+
 ```sh
+python -m pip install -r requirements-dev.txt
+python -B tools/check_integrity.py
 python -B -m unittest discover -s tests -v
 ```
 
-API tests use `requirements-backend.txt`. With frontend dependencies installed,
+The development requirements include the API test dependencies. With frontend dependencies installed,
 run `npm test -- --run` from `phase1/frontend`.
 
 See [docs/usage.md](docs/usage.md) for web startup, inputs, units, outputs and
-troubleshooting. Source code is licensed under [Apache-2.0](LICENSE);
+troubleshooting. For development, see [architecture](docs/architecture.md),
+[interfaces](docs/development/interfaces.md), [testing](docs/development/testing.md)
+and [contributing](CONTRIBUTING.md). Source code is licensed under [Apache-2.0](LICENSE);
 third-party attribution is in [NOTICE](NOTICE).
