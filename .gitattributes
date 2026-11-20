@@ -1,9 +1,7 @@
 * text=auto eol=lf whitespace=cr-at-eol
 borden3d_*.py -text
 borden3d_*.json -text
-SHA256_MANIFEST.json -text
 schemas/** -text
-第七章_Borden联合应用/** -text
 phase1/scenarios/**/*.json -text
 phase1/traffic/scenarios/**/*.xml -text
 phase1/traffic/scenarios/**/*.json -text

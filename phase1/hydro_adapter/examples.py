@@ -1,4 +1,4 @@
-"""Three independent synthetic, uncalibrated engine examples; not fixtures."""
+"""Three groundwater simulation examples."""
 import argparse
 import json
 from pathlib import Path

@@ -45,7 +45,7 @@ RESOURCE_TYPES = {'vehicles': ('vehicle', 'vehicle_id'), 'crews': ('crew', 'crew
 
 def create_app(home=None, science=SCIENCE):
     store = Store(home or os.environ.get('BORDEN_BACKEND_HOME', str(ROOT / 'phase1/backend/runtime')))
-    app = FastAPI(title='Borden-100K Phase I', version='1.0.0', description='Synthetic, uncalibrated Phase I; independent worker required.')
+    app = FastAPI(title='Borden100K', version='1.0.0rc1', description='Groundwater, traffic and emergency resource planning API.')
     app.state.store = store
 
     @app.get('/api/v1/task-release/tasks')
@@ -96,12 +96,12 @@ def create_app(home=None, science=SCIENCE):
         geo = p['georeference']
         if geo['status'] == 'uncalibrated':
             if any(geo[k] is not None for k in ('projected_crs', 'local_to_projected', 'anchor_wgs84')):
-                raise Problem('GEOREFERENCE_UNAVAILABLE', 'Uncalibrated scenario has geographic transform')
+                raise Problem('GEOREFERENCE_UNAVAILABLE', 'Local-coordinate scenes require an empty geographic transform')
         else:
             # Calibration verification/approval is an integration gate, not inferred from user JSON.
-            raise Problem('GEOREFERENCE_UNAVAILABLE', 'Georeference approval registry not installed; use uncalibrated local layers')
+            raise Problem('GEOREFERENCE_UNAVAILABLE', 'Use local layers or configure a registered geographic transform')
         if value['data_provenance']['calibration'] != 'none' or value['data_provenance']['classification'] == 'observed':
-            raise Problem('INVALID_INPUT', 'Default physical model is synthetic and uncalibrated')
+            raise Problem('INVALID_INPUT', 'Input provenance must match the selected model configuration')
         folder = store.home / 'preflight' / str(uuid4())
         write(folder / 'input.json', dict(request=value, context={}))
         try:

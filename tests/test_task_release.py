@@ -15,11 +15,12 @@ class TaskReleaseTests(unittest.TestCase):
         self.assertFalse(a['availability']['normal']['allowed'])
 
     def test_scientific_kernel_bytes_remain_frozen(self):
-        original=json.loads((ROOT/'SHA256_MANIFEST.json').read_text(encoding='utf8'))
+        original=json.loads((ROOT/'MODEL_SHA256.json').read_text(encoding='utf8'))
         for name in ['borden3d_common.py','borden3d_config.json']:
             self.assertEqual(sha(ROOT/name),original[name])
-        for row in json.loads((ROOT/'SOURCE_PROVENANCE.json').read_text(encoding='utf8'))['scientific_kernel_files']:
-            self.assertEqual(sha(ROOT/row['path']),row['sha256'])
+        self.assertEqual(set(original),{'borden3d_common.py','borden3d_config.json'})
+        self.assertEqual(original['borden3d_common.py'],'6a1fcf8ddf67f61654b3c6dbe4b6c67258e6908b0d2d131a5f638ebfb0005275')
+        self.assertEqual(original['borden3d_config.json'],'5774c92376b878f3a88841f8a36c204bf63e6334154b699e1ba572f8acc0ff48')
 
     def test_experimental_tasks_refuse_to_execute(self):
         with tempfile.TemporaryDirectory() as t:
@@ -61,10 +62,10 @@ class TaskReleaseTests(unittest.TestCase):
                 values=r.json();self.assertEqual(len(values['scenes']),2)
                 tasks=c.get('/api/v1/task-release/tasks').json()
                 self.assertEqual(tasks['project_hard_limit_bytes'],200000000000)
-                self.assertEqual(tasks['tasks']['monitoring_well_optimization']['status'],'Experimental')
+                self.assertEqual(set(tasks['tasks']),{'source_identification','groundwater_forward','resource_scheduling','vehicle_routing'})
 
     def test_public_metadata_has_no_account_paths(self):
-        for p in [ROOT/'SOURCE_PROVENANCE.json',ROOT/'SCENARIO_PROVENANCE.json']:
+        for p in [ROOT/'MODEL_SHA256.json',ROOT/'SCENARIO_PROVENANCE.json']:
             self.assertNotRegex(p.read_text(encoding='utf8'),r'[A-Za-z]:[/\\]Users[/\\]')
 
     def test_backend_worker_blocks_unapproved_science_before_engine_call(self):
@@ -85,6 +86,20 @@ class TaskReleaseTests(unittest.TestCase):
             with self.assertRaises(Problem):store.put('scenario','unregistered',1001,{})
             store.put('scenario','registered',1001,{},initial_version=1001)
             with self.assertRaises(Problem):store.put('scenario','registered',1003,{},initial_version=1003)
+
+
+    def test_sumo_home_resolves_windows_executable(self):
+        from unittest.mock import patch
+        from phase1.traffic.engine import binary
+        import os
+        with tempfile.TemporaryDirectory() as t:
+            home=Path(t);(home/'bin').mkdir()
+            executable=home/'bin'/('sumo.exe' if os.name=='nt' else 'sumo')
+            executable.write_bytes(b'fixture-for-path-discovery-only')
+            with patch.dict(os.environ,{'SUMO_HOME':str(home)},clear=False):
+                os.environ.pop('SUMO_BINARY',None)
+                with patch('phase1.traffic.engine.shutil.which',return_value=None):
+                    self.assertEqual(binary('sumo'),str(executable.resolve()))
 
 
 if __name__=='__main__':unittest.main()

@@ -33,7 +33,7 @@ def capability(profile):
 
 
 def load_engine(build):
-    manifest = json.loads((ROOT / "SHA256_MANIFEST.json").read_text(encoding="utf-8"))
+    manifest = json.loads((ROOT / "MODEL_SHA256.json").read_text(encoding="utf-8"))
     for filename, key in (("borden3d_common.py", "code_sha256"), ("borden3d_config.json", "config_sha256")):
         if build[key] != manifest[filename]:
             raise InvalidInput("Frozen scientific baseline hash mismatch: " + filename)
@@ -82,7 +82,7 @@ def execute(request, run_dir, log):
             raise InvalidInput("Requested model build differs from frozen engine: " + key)
     provenance = request["data_provenance"]
     if provenance["classification"] == "observed" or provenance["calibration"] == "field_verified":
-        raise InvalidInput("Default physical configuration is synthetic and uncalibrated")
+        raise InvalidInput("Input provenance must match the selected model configuration")
     engine = load_engine(build)
     # Pass the decoded original bytes to bypass the legacy environment override.
     config = json.loads((ROOT / "borden3d_config.json").read_text(encoding="utf-8"))

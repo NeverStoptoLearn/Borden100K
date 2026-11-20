@@ -49,7 +49,7 @@ def binary(name):
     candidates = [override, shutil.which(name),
                   str(HERE / '.deps/sumo/bin' / (name + ('.exe' if os.name == 'nt' else '')))]
     if os.environ.get('SUMO_HOME'):
-        candidates.append(str(Path(os.environ['SUMO_HOME']) / 'bin' / name))
+        candidates.append(str(Path(os.environ['SUMO_HOME']) / 'bin' / (name + ('.exe' if os.name == 'nt' else ''))))
     for candidate in candidates:
         if candidate and Path(candidate).is_file():
             return str(Path(candidate).resolve())

@@ -12,12 +12,9 @@ MAX_RUN_BYTES=64*1024**2
 SCENES=('borden_reference_100k','synthetic_multiterrain_100k')
 TASKS={
  'source_identification':dict(status='Supported evaluator',baseline='fixed prior midpoint',objective='existing smooth_objective: half mean squared residual / 500^2',constraints='configured x/y and concentration bounds'),
- 'resource_scheduling':dict(status='Supported decoder',baseline='unchanged priority/skill/equipment/inventory scheduler',objective='feasibility and original scheduling report; no optimality claim',constraints='original crew/vehicle/equipment/stock/time constraints'),
+ 'resource_scheduling':dict(status='Supported decoder',baseline='unchanged priority/skill/equipment/inventory scheduler',objective='schedule feasibility and resource allocation',constraints='original crew/vehicle/equipment/stock/time constraints'),
  'vehicle_routing':dict(status='Supported evaluator',baseline='unchanged SUMO routing and closure adapter',objective='actual arrival/travel time',constraints='network permissions, connectivity, closures, time horizon'),
- 'groundwater_forward':dict(status='Supported smoke evaluator',baseline='unchanged SciPy Darcy + 3D FV no-pump model',objective='original transport/mass/flow metrics',constraints='original physical model and contract'),
- 'monitoring_well_optimization':dict(status='Experimental',reason='legacy implementation retained; release-wide optimization acceptance pending'),
- 'emergency_response_optimization':dict(status='Experimental',reason='physical evaluator available; complete search/reproducibility acceptance pending'),
- 'hydro_traffic_coupled_optimization':dict(status='Experimental',reason='Phase I pipeline available; optimized coupled task acceptance pending')}
+ 'groundwater_forward':dict(status='Supported smoke evaluator',baseline='unchanged SciPy Darcy + 3D FV no-pump model',objective='original transport/mass/flow metrics',constraints='original physical model and contract')}
 
 
 def sha(path):

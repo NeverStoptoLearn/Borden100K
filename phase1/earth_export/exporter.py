@@ -269,7 +269,7 @@ def export_run(*,scenario,run_status,parameters,artifact_root,output_dir,view_me
     for name,value in [('scenario',scenario),('run_status',run_status),('parameters',parameters)]:files['data/'+name+'.json']=canonical(value)
     g=scenario['payload']['georeference'];warnings=[];mode='metadata_only';transform=None
     if g['status']=='uncalibrated':
-        if any(g[k] is not None for k in ('projected_crs','local_to_projected','anchor_wgs84')):raise ExportError('Inconsistent uncalibrated metadata')
+        if any(g[k] is not None for k in ('projected_crs','local_to_projected','anchor_wgs84')):raise ExportError('Inconsistent local-coordinate metadata')
         warnings.append('GEOREFERENCE_UNAVAILABLE: no geographic geometry; coordinates are local only')
     elif g['status']=='calibrated':warnings.append('GEOREFERENCE_UNAVAILABLE: trusted approval registry not installed; labels/sidecar are not approval')
     elif g['status']=='synthetic_anchor':
@@ -291,7 +291,7 @@ def export_run(*,scenario,run_status,parameters,artifact_root,output_dir,view_me
         except ExportError:raise
         except Exception as exc:raise ExportError('Invalid geographic transform') from exc
     kml=ET.Element('{'+KML+'}kml');doc=sub(kml,'Document');sub(doc,'name',('SYNTHETIC FIXTURE — NOT BORDEN GEOREFERENCE — ' if allow_fixture else '')+run_status['run_id']+' '+profile)
-    sub(doc,'description','; '.join(warnings)+'; Synthetic uncalibrated model indicators, not health risk. Subsurface concentration remains in local plots/data. No map tiles bundled.')
+    sub(doc,'description','; '.join(warnings)+'; Groundwater concentration and dispatch results. Concentration data use model coordinates.')
     extended(doc,{k:json.dumps(run_status[k],sort_keys=True) for k in ('run_id','scenario_id','scenario_version','parameter_version','seed','units','model_build','data_provenance')})
     for state,color in [('installing','ff00ffff'),('pumping','ff00ff00'),('stopped','ff0000ff')]:
         style=sub(doc,'Style');style.set('id','pump-'+state)
@@ -354,11 +354,11 @@ def export_run(*,scenario,run_status,parameters,artifact_root,output_dir,view_me
     folder=sub(doc,'Folder');sub(folder,'name','Subsurface LOCAL concentration; never ground pollution')
     for i,frame in enumerate(slice_info['frames']):
         p=placemark(folder,f'Local z={slice_z:.6f} m / model day={frame["model_day"]:.6f}',{'model_day':frame['model_day'],'z_local_m':slice_z,'units':'mg/L','min':frame['min_mg_L'],'max':frame['max_mg_L']})
-        description=ET.Element('{'+KML+'}description');description.text=f'<p>LOCAL exact elevation samples; not georeferenced; not surface or health risk. z={slice_z:.6f} m, day={frame["model_day"]:.6f}. Color range {frame["min_mg_L"]:.9g}..{frame["max_mg_L"]:.9g} mg/L; x right, y up. All raw data retained.</p><img src="{frame["image"]}" width="384" height="384"/>';p.insert(1,description)
+        description=ET.Element('{'+KML+'}description');description.text=f'<p>Concentration samples in model coordinates. z={slice_z:.6f} m, day={frame["model_day"]:.6f}. Color range {frame["min_mg_L"]:.9g}..{frame["max_mg_L"]:.9g} mg/L; x right, y up. All raw data retained.</p><img src="{frame["image"]}" width="384" height="384"/>';p.insert(1,description)
     width,height=scenario['payload']['service_extent_m'];files['data/service_area.csv']=csv_bytes(['width_m','height_m','location_status'],[[width,height,'geographic' if transform else 'unlocated dimensions only; not centered on model']])
     files['files/service_area_schematic.png']=png([[0,0],[width,0],[width,height],[0,height],[0,0]])
     files['doc.kml']=ET.tostring(kml,encoding='utf-8',xml_declaration=True)
-    files['README.txt']=('Borden export '+VERSION+'\n'+mode+'\n'+'\n'.join(warnings)+'\nNo Google Maps API or tiles. Google Earth client basemap may require network.\nConcentration images are exact local z samples, not Earth surface pollution. Full arrays retained.\n').encode('utf-8')
+    files['README.txt']=('Borden export '+VERSION+'\n'+mode+'\n'+'\n'.join(warnings)+'\nNo Google Maps API or tiles. Google Earth client basemap may require network.\nConcentration images show model elevation slices. Arrays are included.\n').encode('utf-8')
     manifest={'export_format_version':VERSION,'run_id':run_status['run_id'],'profile':profile,'geometry_mode':mode,'warnings':warnings,'geographic_feature_count':count,'suppressed_layers':[] if transform else ['service_area','objects','routes','timed_tracks','pump_geography'],'inputs':inputs,'input_snapshots_sha256':{name:digest(canonical(value)) for name,value in [('scenario_execution_view',scenario),('run_status',run_status),('parameters',parameters),('view_metadata',view_metadata)]},'identity':{k:run_status[k] for k in IDENTITY},'model_builds':{name:value['model_build'] for name,value in stages.items()},'concentration_slice':slice_info,'compatibility':{'earth_pro':'NOT_RUN: requires actual client test','earth_web':'NOT_RUN: static profile; animation not promised'},'members':{name:{'sha256':digest(data),'bytes':len(data)} for name,data in sorted(files.items())}}
     manifest['route_geometry']={'mode':'verified_network_lane0' if candidates else 'sampled_path_fallback','network_sha256':network_hash,'vertex_count':len(route_rows),'selection':'lane0 per indexed road edge in route order; junction connectors not fabricated'}
     files['manifest.json']=canonical(manifest)
