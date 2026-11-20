@@ -9,8 +9,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 5897,
-      "sha256": "d6337ad214ef3d3a76131cd4bc7b1c56e31e8cb03d85e510e68d7b654206652e"
+      "bytes": 5915,
+      "sha256": "8f96fb701e159d55d7f81bf404c073bd667acac21f5ce2d47b53527b55ecf248"
     },
     {
       "path": "AGENTS.md",
@@ -48,9 +48,14 @@
       "sha256": "6e4f2af07485d28b6ff1aace11acb992ef74ea1c3366d92cc71c5540061998cd"
     },
     {
+      "path": "PUBLICATION.md",
+      "bytes": 2783,
+      "sha256": "3fb018c7884ddb193581345b2f1d8e97ecb1669389fc302263ef2b7ebfcf9b10"
+    },
+    {
       "path": "README.md",
-      "bytes": 9456,
-      "sha256": "624c8729c4af97e6e4dcfee01263c4204a8fc998217dfd7565a08423f1dcde61"
+      "bytes": 9672,
+      "sha256": "da63af67923e851c33723fbda42787b39ebaf21aeb11358d64499312e377c893"
     },
     {
       "path": "REPRODUCIBILITY.md",

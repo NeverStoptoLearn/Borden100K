@@ -82,8 +82,15 @@ No imagery API key is required. Google Maps 3D is optional and disabled by defau
 
 ## Installation
 
-Use a source checkout or source archive and run commands from its root. Reuse a
-compatible environment, or create one if needed:
+Clone the public repository and enter its root:
+
+```sh
+git clone https://github.com/NeverStoptoLearn/Borden100K.git
+cd Borden100K
+```
+
+Use this source checkout or a source archive. Reuse a compatible environment,
+or create one if needed:
 
 ```sh
 python -m venv .venv
@@ -192,8 +199,10 @@ cd phase1/frontend
 npm test -- --run
 ```
 
-See [VALIDATION.md](VALIDATION.md) for the scope of existing evidence. Tests that
-were not run in a particular environment must not be reported as passing.
+See [PUBLICATION.md](PUBLICATION.md) for publication checks and scope.
+[VALIDATION.md](VALIDATION.md) records earlier local acceptance evidence; its
+local operational state is historical. Tests not run in a particular environment
+must not be reported as passing.
 
 ## Documentation
 
